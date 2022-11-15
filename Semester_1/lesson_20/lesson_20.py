@@ -1,1 +1,3 @@
-'lesson - 20'
+def function():
+    return 'Hello, world!'
+print(function())
