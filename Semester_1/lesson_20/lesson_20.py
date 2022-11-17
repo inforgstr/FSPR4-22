@@ -4,7 +4,8 @@
 
 '''
 Цикл работы с гит: 
- 
+
+git init - создает локальную репозиторию с файлом .git
 System: git config --system 
 Use: git config --global 
 Project: git config 
