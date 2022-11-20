@@ -1,2 +1,2 @@
-name = 'Umid'
+name = 'Newname'
 ''''''
