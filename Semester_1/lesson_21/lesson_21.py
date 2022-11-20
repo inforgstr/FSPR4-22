@@ -1,2 +1,2 @@
-name = 'Special_name_id'
+name = 'Special'
 ''''''
