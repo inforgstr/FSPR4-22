@@ -1,2 +1,2 @@
-name = 'Secret'
+name = 'Secrets'
 ''''''
