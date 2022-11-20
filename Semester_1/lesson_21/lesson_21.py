@@ -1,2 +1,3 @@
-name = 'unknown'
+name = 'saf'
+print(name)
 ''''''
