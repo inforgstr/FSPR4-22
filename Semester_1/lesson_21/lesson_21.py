@@ -1,2 +1,2 @@
-name = 'Specialed'
+name = 'Special'
 ''''''
