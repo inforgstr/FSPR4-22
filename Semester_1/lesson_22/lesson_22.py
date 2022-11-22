@@ -26,8 +26,6 @@ class Marker:
         self.health -= line_length
 
 marker = Marker('Marker Inc.', 'red', 34)
-marker2 = Marker('Mark Inc.', 'blue', 23)
-marker3 = Marker('Mark Inc.', 'blue', 36)
 # obj = {} # копию - экземпляр объекта function
 
 print(marker.draw(15))
