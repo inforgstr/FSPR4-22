@@ -5,7 +5,7 @@
 
 class Car:
     # 1л - 10 км
-    Fuel_way = 300 # пройденный путь
+    Fuel_way = 300 # путь
     def __init__(self, model, color, price, country, engine):
         self.model = model
         self.color = color
