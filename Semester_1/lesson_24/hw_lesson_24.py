@@ -45,3 +45,36 @@ player1 = Archer(40, 76, 50, 'af', 'high')
 print('Атака персонажа(Archer)', player1.attack())
 print(f'Здоровье персонажа(Paladin) {player.heal()}')
 
+# 3. Из кодварса решить две (хотя бы одну) по ссылку по ООП:
+
+# 1)Building blocks    -   Link: https://www.codewars.com/kata/55b75fcf67e558d3750000a3
+class Block:
+    def __init__(self, n):
+        self.n = n
+    def get_width(self):
+        return self.n[0]
+    def get_length(self):
+        return self.n[1]
+    def get_height(self):
+        return self.n[2]
+    def get_volume(self):
+        s = 1
+        for i in self.n:
+            s *= i
+        return s
+    def get_surface_area(self):
+        return (self.n[0]*self.n[1]+self.n[0]*self.n[2]+self.n[1]*self.n[2])*2
+
+block = Block([23, 45, 34])
+print('Площадь поверхности призмы -', block.get_surface_area())
+
+# 2)Refactored Greeting    -   link: https://www.codewars.com/kata/5121303128ef4b495f000001/train/python
+class Person:
+    def __init__(self, n):
+        self.name = n
+    def greet(self, names):
+        return f'Hello {names}, my name is {self.name}'
+
+person = Person('Joe')
+print(person.name)
+print(person.greet('Kate'))
