@@ -58,8 +58,9 @@ class Person:
     def __sub__(self, other):
         x = self.x - other.x
         y = self.y - other.y
+        return Person(x, y)
 
 person = Person(234, 23)
 person_2 = Person(154, 18)
 result = person - person_2
-print(result)
+print(result.x, result.y)
