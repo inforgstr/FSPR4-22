@@ -1,43 +1,48 @@
-class BaseCharacter:
-    experience = 0
-    lvl = 1
+# class BaseCharacter:
+#     experience = 0
+#     lvl = 1
 
-    def __init__(self, health, mana, damage, type, skills):
-        self.health = health
-        self.mana  = mana
-        self.damage = damage
-        self.type = type
-        self.skills = skills
+#     def __init__(self, health, mana, damage, type, skills):
+#         self.health = health
+#         self.mana  = mana
+#         self.damage = damage
+#         self.type = type
+#         self.skills = skills
 
-    def attack(self, enemy_health):
-        return enemy_health - self.damage
+#     def attack(self, enemy_health):
+#         return enemy_health - self.damage
     
-    def heal(self):
-        if 'heal' in self.skills:
-            self.health += 10
+#     def heal(self):
+#         if 'heal' in self.skills:
+#             self.health += 10
 
-    def enemy_killed(self, enemy_lvl):
-        if enemy_lvl == 1:
-            self.experience += 5
-            self.level_up()
-            print(f'You leveled up! Current level is {self.lvl}')
-    def level_up(self):
-        if 10 <= self.experience <= 20:
-            self.lvl += 1
-        elif 21 <= self.experience <= 30:
-            self.lvl += 1
-        elif 31 <= self.experience <= 40:
-            self.lvl += 1
-        elif 41 <= self.experience <= 50:
-            self.lvl += 1
-        elif 51 <= self.experience:
-            self.lvl += 1
-class Archer(BaseCharacter):
-    pass
-class Paladin(BaseCharacter):
-    pass
-class Wizard(BaseCharacter):
-    pass
+#     def enemy_killed(self, enemy_lvl):
+#         if enemy_lvl == 1:
+#             self.experience += 5
+#             self.level_up()
+#             print(f'You leveled up! Current level is {self.lvl}')
+#     def level_up(self):
+#         if 10 <= self.experience <= 20:
+#             self.lvl += 1
+#         elif 21 <= self.experience <= 30:
+#             self.lvl += 1
+#         elif 31 <= self.experience <= 40:
+#             self.lvl += 1
+#         elif 41 <= self.experience <= 50:
+#             self.lvl += 1
+#         elif 51 <= self.experience:
+#             self.lvl += 1
+# class Archer(BaseCharacter):
+#     pass
+# class Paladin(BaseCharacter):
+#     pass
+# class Wizard(BaseCharacter):
+#     pass
+# person = BaseCharacter(15, 20, 15, 'base', ['heal'])
+# person_2 = BaseCharacter(15, 20, 15, 'base', ['heal'])
+# print(person.attack(person_2.health))
+# print(person_2.health)
+
 
 # type(1)
 # repr(1)
