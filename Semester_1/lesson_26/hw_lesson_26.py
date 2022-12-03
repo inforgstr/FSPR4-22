@@ -48,7 +48,7 @@ class Store:
                 print('You have succesfully loged in!')
             else:
                 print('Your account have not found in our server! You need to register!')
-
+                return
 
             self.name = name 
             self.password = password
@@ -68,6 +68,7 @@ class Store:
                     print(f'Automatically added {product} in purchases.')
                 elif value - val <= 0:
                     print('\nNot enough money!')
+                    return
         
     elif a == 'register':
 
@@ -86,6 +87,7 @@ class Store:
                     print('\nIncorrect type of password or email or card, please try again!')
             else:
                 print('\nYou have registered! Please try again.(WARNING! You should log in!)')
+                return
             self.name = name
             self.password = password
             self.email = email
