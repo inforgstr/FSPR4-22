@@ -64,6 +64,8 @@ class Store:
                 if i == product and value - val > 0:
                     value -= val
                     print(f'\nYou have succesfully bought this product. You lost {val}. And you left {value-val}')
+                    purchased = product
+                    self.purchases.append(purchased)
                 elif value - val <= 0:
                     print('\nNot enough money!')
         
