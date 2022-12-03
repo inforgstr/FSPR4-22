@@ -103,7 +103,7 @@ class Store:
                     self.purchases.append(purchased)
                     print(f'Automatically added {purchased} in purchases.')
                     
-                elif value - val <= 0:
+                elif value - val < 0:
                     print('\nNot enough money!')
 
             
