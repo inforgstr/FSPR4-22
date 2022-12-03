@@ -64,8 +64,8 @@ class Store:
                 if i == product and value - val > 0:
                     value -= val
                     print(f'\nYou have succesfully bought this product. You lost {val}. And you left {value-val}')
-                    purchased = product
-                    self.purchases.append(purchased)
+                    self.purchases.append(product)
+                    print(f'Automatically added {product} in purchases.')
                 elif value - val <= 0:
                     print('\nNot enough money!')
         
@@ -101,9 +101,8 @@ class Store:
                 if i == product and value - val > 0:
                     value -= val
                     print(f'\nYou have succesfully bought this product. You lost {val}. And you left {value-val}.')
-                    purchased = product
-                    self.purchases.append(purchased)
-                    print(f'Automatically added {purchased} in purchases.')
+                    self.purchases.append(product)
+                    print(f'Automatically added {product} in purchases.')
                     
                 elif value - val < 0:
                     print('\nNot enough money!')
