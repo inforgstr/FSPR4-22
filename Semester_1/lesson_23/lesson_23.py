@@ -23,8 +23,8 @@ class PlayerCharacter:
         return cls(a, num1*num2)
 
     @staticmethod
-    def multiply(cls, a, b): # не принимает self
-        return cls(a * b)
+    def multiply(a, b): # не принимает self
+        return a * b
 
 
 player_1 = PlayerCharacter('Jerry', 20)
