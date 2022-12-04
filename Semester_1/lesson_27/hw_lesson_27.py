@@ -83,7 +83,8 @@ class Store:
             if i == product and self.card_balance - val >= 0:
                 self.card_balance -= val
                 self.purchases.append(product)
-                return f'Succesfully bought this product and added in purchases!\nBalance: {self.card_balance}'
+                USERS[-1]['purchases'].append(product)
+                return f'Succesfully bought this product and added in purchases!\nBalance: {self.card_balance} {USERS[-1]}'
             elif self.card_balance - val < 0:
                 return 'Not enough money.'
 
