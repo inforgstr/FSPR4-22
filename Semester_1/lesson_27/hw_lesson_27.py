@@ -84,7 +84,7 @@ class Store:
                 self.card_balance -= val
                 self.purchases.append(product)
                 USERS[-1]['purchases'].append(product)
-                return f'Succesfully bought this product and added in purchases!\nBalance: {self.card_balance} {USERS[-1]}'
+                return f'\nSuccesfully bought {product} and added in purchases!\nBalance: {self.card_balance}\nYour purchases {self.purchases}'
             elif self.card_balance - val < 0:
                 return 'Not enough money.'
 
@@ -98,6 +98,4 @@ elif enter == 'register':
     print(user_1.purchase('key'))
     user_2 = Store.register('B', 'dfsd@gmail', 'sdflkjsldfs', '7685768857689878', 500)
     print(user_2.purchase('wear'))
-
-print(user_1)
-print(user_2)
+    
