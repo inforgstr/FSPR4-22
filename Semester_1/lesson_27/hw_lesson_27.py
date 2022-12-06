@@ -108,4 +108,4 @@ elif enter == 'register':
     if isinstance(user_2, Store):
         print(user_2.purchase('key'))
     else:
-        print('Wrong email or password!')
+        print('Wrong data\'s were given!')
