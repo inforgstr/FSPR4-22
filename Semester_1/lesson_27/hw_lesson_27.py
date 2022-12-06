@@ -75,6 +75,8 @@ class Store:
                 }
             )
             return cls(name, email, password, card_code, card_balance)
+        else:
+            return 'Wrong email or password!'
 
     def purchase(self, product):
         if product not in PRODUCTS.keys():
@@ -84,18 +86,26 @@ class Store:
                 self.card_balance -= val
                 self.purchases.append(product)
                 USERS[-1]['purchases'].append(product)
-                return f'\nSuccesfully bought {product} and added in purchases!\nBalance: {self.card_balance}\nYour purchases {self.purchases}'
+                return f'\nSuccesfully bought {product} and added into purchases!\nBalance: {self.card_balance}\nYour purchases: {self.purchases}'
+                
             elif self.card_balance - val < 0:
                 return 'Not enough money.'
-
 
 enter = input('register or login: ')
 if enter == 'login':
     user_1 = Store.login('behruz@gmail.com', '234fjfdsd')
-    print(user_1.purchase('wear'))
+    if isinstance(user_1, Store):
+        print(user_1.purchase('wear'))
+    else:
+        print('Wrong email or password!')
+
 elif enter == 'register':
-    user_1 = Store.register('H', 'sdfsfds@gmail.com', 'sdfdsdflsdf', '6475869957688909', 1000)
-    print(user_1.purchase('key'))
+    user_1 = Store.register('H', 'sdfsfdsgmail.com', 'sdfdsdflsdf', '6475869955688909', 1000)
     user_2 = Store.register('B', 'dfsd@gmail', 'sdflkjsldfs', '7685768857689878', 500)
-    print(user_2.purchase('wear'))
-    
+
+    if isinstance(user_1, Store):
+        print(user_1.purchase('wear'))
+    if isinstance(user_2, Store):
+        print(user_2.purchase('key'))
+    else:
+        print('Wrong email or password!')

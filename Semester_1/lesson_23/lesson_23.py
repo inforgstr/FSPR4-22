@@ -28,7 +28,7 @@ class PlayerCharacter:
 
 
 player_1 = PlayerCharacter('Jerry', 20)
-print(player_1.shout())
+print(player_1.adding(45, 345, 45))
 # print(player_1.multiply(34, 4543))
 # player2 = PlayerCharacter(0, 34)
 # print(player2.name, player2.age)
