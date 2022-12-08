@@ -58,10 +58,9 @@ class Store:
     @classmethod
     def register(cls, name, email, password, card_code, card_balance):
         for user in USERS:
-            if email != user['email'] and user['password'] != password:
-                break
-            else:
-                return 'Wrong email and password.'
+            if email == user['email'] and user['password'] == password:
+                return 'User with this name and email is in data!'
+
         if not(name and email and password and card_code and card_balance):
             return 'Empty values were given.'
         if isinstance(name, str) and '@' in email and len(password) >= 6 and len(card_code) == 16:
@@ -85,7 +84,10 @@ class Store:
             if i == product and self.card_balance - val >= 0:
                 self.card_balance -= val
                 self.purchases.append(product)
-                USERS[-1]['purchases'].append(product)
+                for id, user in enumerate(USERS):
+                    if user['email'] == self.email and user['password'] == self.password:
+                        USERS[id]['purchases'].append(product)
+                PRODUCTS.pop(i)
                 return f'\nSuccesfully bought {product} and added into purchases!\nBalance: {self.card_balance}\nYour purchases: {self.purchases}'
                 
             elif self.card_balance - val < 0:
