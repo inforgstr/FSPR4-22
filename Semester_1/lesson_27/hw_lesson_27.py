@@ -52,8 +52,7 @@ class Store:
         for user in USERS:
             if user['email'] == email and user['password'] == password:
                 return cls(user['name'], email, password, user['card']['code'], user['card']['money'])
-            else:
-                return 'Wrong email or password'
+        return 'Wrong email or password'
 
     @classmethod
     def register(cls, name, email, password, card_code, card_balance):
@@ -74,8 +73,7 @@ class Store:
                 }
             )
             return cls(name, email, password, card_code, card_balance)
-        else:
-            return 'Wrong email or password!'
+        return 'Wrong email or password!'
 
     def purchase(self, product):
         if product not in PRODUCTS.keys():
