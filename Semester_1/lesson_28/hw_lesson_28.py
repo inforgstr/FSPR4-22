@@ -108,6 +108,18 @@ PRODUCTS = [
 
 
 #                        CLASS STOREOWNER
+PRODUCTS = [
+    {
+        'name': 'key',
+        'value': 5,
+        'color': 'black',
+    },
+    {
+        'name': 'wear',
+        'value': 100,
+        'color': 'white',
+    }
+]
 
 class StoreOwner:
     def __init__(self, name_of_product, value_of_product, color_of_product):
