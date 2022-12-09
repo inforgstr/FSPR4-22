@@ -100,7 +100,7 @@ if enter == 'login':
         print('Wrong email or password!')
 
 elif enter == 'register':
-    user_1 = Store.register('H', 'sdfsfdsgmail.com', 'sdfdsdflsdf', '6475869955688909', 1000)
+    user_1 = Store.register('H', 'sdfsfds@gmail.com', 'sdfdsdflsdf', '6475869955688909', 1000)
     user_2 = Store.register('B', 'dfsd@gmail', 'sdflkjsldfs', '7685768857689878', 500)
 
     if isinstance(user_1, Store):
