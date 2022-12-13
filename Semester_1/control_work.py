@@ -162,18 +162,16 @@ def is_defended(attackers, defenders):
     if len(attackers) != len(defenders):
         dop = [i * 0 for i in range(len(attackers) - len(defenders))]
         if len(attackers) > len(defenders):
-            defenders += dop
-        else:
-            attackers += dop
+            pass
 
     d = []
     for i in range(len(defenders)):
         d.append([defenders[i], attackers[i]])
 
-    for pair in d:
-        if pair[0] - pair[1] > 0:
+    for r in d:
+        if r[0] - r[1] > 0:
             surviving_defenders += 1
-        elif pair[0] - pair[1] < 0:
+        elif r[0] - r[1] < 0:
             surviving_attackers += 1
 
         
