@@ -16,7 +16,7 @@ Password checker example
 int
 float
 str
-bool - True and Faldse | 0 и 1
+bool - True and False | 0 и 1
 
 '''
 
