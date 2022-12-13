@@ -8,4 +8,4 @@ def num_of_open_lockers(n):
 
     return res.count(0)
 
-print(num_of_open_lockers(324242478))
+print(num_of_open_lockers(324))
