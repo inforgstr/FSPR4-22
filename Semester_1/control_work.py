@@ -162,7 +162,9 @@ def is_defended(attackers, defenders):
     if len(attackers) != len(defenders):
         dop = [i * 0 for i in range(len(attackers) - len(defenders))]
         if len(attackers) > len(defenders):
-            pass
+            defenders += dop
+        else:
+            attackers += dop
 
     d = []
     for i in range(len(defenders)):
