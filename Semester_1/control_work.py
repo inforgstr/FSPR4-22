@@ -191,4 +191,3 @@ def is_defended(attackers, defenders):
         return False
     else:
         return True if sum(defenders) >= sum(attackers) else False
-print(123)
