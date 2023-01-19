@@ -5,4 +5,4 @@ def factorial(number):
     return m
 
 
-print(factorial(10))
+print(factorial(5))
