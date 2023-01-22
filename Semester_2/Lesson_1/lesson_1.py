@@ -1,13 +1,5 @@
-# Starting with creating data for questions
-questions = {
-    "What is your favorite color?": "Black",
-    "What kind of program languages do you know/are you learning?": "Python",
-    "What is your name?": "admin",
-    "What is your email adress?": "myemail@gmail.com",
-    "What is your password?": "1234567890",
-}
+from data import questions
 
-# Create all user's result from test
 user_results = []
 user_points = 0
 
@@ -31,7 +23,7 @@ for question, val in questions.items():
         user_results.append("incorrect")
         user_points += 0
 
-percent = abs(user_points * (100/len(questions)))
+percent = abs(user_points * (100 / len(questions)))
 
 """GPA system"""
 if percent > 86:
@@ -44,13 +36,13 @@ else:
     gpa_system = "F"
 
 
-# Printing all results form test
+# Output
 print(
     "|------------------------------------|\n"
     f"|**********TEST-RESULTf**********|"
     f"\nYour correct answers: {user_results.count('correct')}."
     f"\nIncorrect answers: {user_results.count('incorrect')}."
-    f"\nOverall percent: {percent:.2f}% .\n"
+    f"\nOverall percentage: {percent:.2f}% .\n"
 )
 
 for index, answer in enumerate(user_results, 1):
