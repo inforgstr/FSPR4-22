@@ -5,7 +5,7 @@ user_points = 0
 
 # Test explanation
 print(
-    f"Hello there!\nInput correct answer, for skip use button 'E' with upper case.\nThere are some GPT system requirements:\n"
+    f"Hello there!\nInput correct answer, for skip questions use button 'E' with upper case.\nThere are some GPT system requirements:\n"
     f"\n\tA - greater than 86%\n\tB - greater than 75%\n\tC - greater than 65%\n\tFor F - less than 65%.\n\t\t\t\tGood Luck!"
 )
 
