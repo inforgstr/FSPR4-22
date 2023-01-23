@@ -25,6 +25,7 @@ if questions:
           user_points += 0
 
 percent = user_points * (100 / len(questions))
+incorrects = user_results.count("incorrect")+user_results.count("skipped")
 
 """GPA system"""
 if percent > 86:
@@ -42,9 +43,10 @@ print(
     "\n\t\t|--------------------------------|\n"
     f"\t\t|**********TEST-RESULTS**********|\n"
     f"\n\t\tYour correct answers: {user_results.count('correct')}."
-    f"\n\t\tIncorrect answers: {user_results.count('incorrect')}."
-    f"\n\t\tOverall percentage: {percent:.2f}% .\n"
-    f"\t\t__________________________________\n"
+    f"\n\t\tIncorrect answers: {incorrects}."
+    f"\n\t\tOverall percentage: {percent:.2f}% ."
+    f"\n\t\tYour GPA score is {gpa_system}"
+    f"\n\t\t__________________________________\n"
 )
 if user_results:
     for index, answer in enumerate(user_results, 1):
