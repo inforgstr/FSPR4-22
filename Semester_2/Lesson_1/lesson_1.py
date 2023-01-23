@@ -44,6 +44,6 @@ print(
     f"\nIncorrect answers: {user_results.count('incorrect')}."
     f"\nOverall percentage: {percent:.2f}% .\n"
 )
-
-for index, answer in enumerate(user_results, 1):
-    print(f"{index} question was {answer}!")
+if user_results:
+    for index, answer in enumerate(user_results, 1):
+        print(f"{index} question was {answer}!")
