@@ -40,7 +40,7 @@ else:
 # Output
 print(
     "\n\t\t|--------------------------------|\n"
-    f"\t\t|**********TEST-RESULTf**********|\n"
+    f"\t\t|**********TEST-RESULTS**********|\n"
     f"\n\t\tYour correct answers: {user_results.count('correct')}."
     f"\n\t\tIncorrect answers: {user_results.count('incorrect')}."
     f"\n\t\tOverall percentage: {percent:.2f}% .\n"
@@ -48,4 +48,4 @@ print(
 )
 if user_results:
     for index, answer in enumerate(user_results, 1):
-        print(f"\t\t\t{index} question was {answer}!")
+        print(f"\t\t\t{index} answer was {answer}!")
