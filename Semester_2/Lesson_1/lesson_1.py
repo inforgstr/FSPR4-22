@@ -11,21 +11,21 @@ print(
 
 # Itering question for test user
 if questions:
-  for question, val in questions.items():
-      new_question = input(f"\n{question} \n")
-  
-      if new_question == val:
-          user_results.append("correct")
-          user_points += 1
-      elif new_question == "E":
-          user_results.append("skipped")
-          user_points += 0
-      else:
-          user_results.append("incorrect")
-          user_points += 0
+    for question, val in questions.items():
+        new_question = input(f"\n{question} \n")
+
+        if new_question == val:
+            user_results.append("correct")
+            user_points += 1
+        elif new_question == "E":
+            user_results.append("skipped")
+            user_points += 0
+        else:
+            user_results.append("incorrect")
+            user_points += 0
 
 percent = user_points * (100 / len(questions))
-incorrects = user_results.count("incorrect")+user_results.count("skipped")
+incorrects = user_results.count("incorrect") + user_results.count("skipped")
 
 """GPA system"""
 if percent > 86:
