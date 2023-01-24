@@ -3,7 +3,7 @@ import csv
 
 x = random.randint(0, 100)
 
-s = 0
+s = -1
 counter = 0
 win = 1000000
 
