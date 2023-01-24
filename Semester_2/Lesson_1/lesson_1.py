@@ -54,6 +54,6 @@ text = result + [
     for index, answer in enumerate(user_results, 1)
 ]
 
-with open("file.csv", "w", newline="") as file:
+with open("Semester_2/Lesson_1/file.csv", "w", newline="") as file:
     csv_writer = csv.writer(file, delimiter="\n")
     csv_writer.writerow(text)

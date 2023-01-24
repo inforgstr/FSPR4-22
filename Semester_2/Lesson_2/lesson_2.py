@@ -1,4 +1,5 @@
 import random
+import csv
 
 x = random.randint(0, 100)
 
@@ -33,10 +34,16 @@ if counter <= 10:
         for i in range(counter - 3):
             win -= 100
     if win > 0:
-        print(
+        result = [
             f"\n\nYour number is correct! The random number was {s}\nYour attempts: {counter}\n\t\tYou win {win}"
-        )
+        ]
+        print("".join(result))
     else:
-        print(
+        result = [
             f"\n\nYour number is correct! The random number was {s}\nYour attempts: {counter}\n\t\tYour duty is {abs(win)}"
-        )
+        ]
+        print("".join(result))
+
+with open("Semester_2/Lesson_2/file.csv", "w") as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow(result)
