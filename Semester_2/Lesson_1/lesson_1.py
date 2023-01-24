@@ -1,4 +1,5 @@
 from data import questions
+import csv
 
 user_results = []
 user_points = 0
@@ -39,15 +40,20 @@ else:
 
 
 # Output
-print(
-    "\n\t\t|--------------------------------|\n"
-    f"\t\t|**********TEST-RESULTS**********|\n"
-    f"\n\t\tYour correct answers: {user_results.count('correct')}."
-    f"\n\t\tIncorrect answers: {incorrects}."
-    f"\n\t\tOverall percentage: {percent:.2f}% ."
-    f"\n\t\tYour GPA score is {gpa_system}"
-    f"\n\t\t__________________________________\n"
-)
-if user_results:
-    for index, answer in enumerate(user_results, 1):
-        print(f"\t\t\t{index} answer was {answer}!")
+result = [
+    "\t\t\t|--------------------------------|",
+    "\t\t\t|**********TEST-RESULTS**********|",
+    f"\t\t\tCorrect answers: {user_results.count('correct')}.",
+    f"\t\t\tIncorrect answers: {incorrects}.",
+    f"\t\t\tOverall percentage: {percent:.2f}% .",
+    f"\t\t\tYour GPA score is {gpa_system}",
+    f"\t\t\t__________________________________\n\n\n",
+]
+text = result + [
+    f"\t\t\t\t{index} answer was {answer}"
+    for index, answer in enumerate(user_results, 1)
+]
+
+with open("file.csv", "w", newline="") as file:
+    csv_writer = csv.writer(file, delimiter="\n")
+    csv_writer.writerow(text)
