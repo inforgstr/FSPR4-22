@@ -8,7 +8,7 @@ counter = 0
 win = 1000000
 
 
-while s != x and counter != 10:
+while s != x:
     a = int(input())
     if a < x:
         print("Your number is less than random number!")
@@ -19,11 +19,14 @@ while s != x and counter != 10:
         counter += 1
     elif a == x:
         s = a
-    else:
+    if counter > 10:
         print("You lose lot of attempts!")
+        break
 
 if counter <= 10:
-    if counter == 1:
+    if counter == 0:
+        print(win)
+    elif counter == 1:
         win -= 999650
         print(win)
     elif counter == 2:
@@ -35,7 +38,7 @@ if counter <= 10:
             win -= 100
     if win > 0:
         result = [
-            f"\n\nYour number is correct! The random number was {s}\nYour attempts: {counter}\n\t\tYou win {win}"
+            f"\n\nYour number is correct! The random number was {s}\nYour attempts: {counter}\n\t\tYou won {win}"
         ]
         print("".join(result))
     else:
@@ -44,6 +47,8 @@ if counter <= 10:
         ]
         print("".join(result))
 
+
 with open("Semester_2/Lesson_2/file.csv", "w") as file:
-    csv_writer = csv.writer(file)
+    result = [f"Attempts: {counter}", f"Reward: {win}"]
+    csv_writer = csv.writer(file, delimiter="\n")
     csv_writer.writerow(result)
