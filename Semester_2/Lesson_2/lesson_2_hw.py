@@ -15,14 +15,17 @@ def replacer(lyric, legals="", illegals=""):
             s.append(res[i])
             s.append(" ")
         elif "," in res[i]:
-            s.append(res[i][:-1])
+            s.append(res[i][:-(res[i].count(","))])
+            length_item = res[i].count(",")*","
             s.append(", ")
         elif "." in res[i]:
-            s.append(res[i][:-1])
-            s.append(". ")
+            length_item = res[i].count(".")*"."
+            s.append(res[i][:-(res[i].count("."))])
+            s.append(f"{length_item} ")
         elif "!" in res[i]:
-            s.append(res[i][:-1])
-            s.append("! ")
+            length_item = res[i].count("!")*"!"
+            s.append(res[i][:-(res[i].count("!"))])
+            s.append(f"{length_item} ")
 
     for i in range(len(s)):
         if s[i].lower() in illegals:
