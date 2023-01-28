@@ -62,7 +62,7 @@ class Atm:
         total = amount + amount/100
         if card == "10000" and total <= self.balance:
             self.balance -= total
-            return f"\nSuccessfull! Your account balance: {self.balance}"
+            return f"\nSuccessfull! Your account balance: {self.balance:.2f}"
                 
                 
 
