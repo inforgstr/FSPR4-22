@@ -1,6 +1,5 @@
 class Atm:
-    def __init__(self, balance, bill):
-        self.bill = bill
+    def __init__(self, balance):
         self.balance = balance
         self.name = input("Input your user name: ")
 
@@ -75,7 +74,7 @@ USERS = {
 }
 
 
-atm = Atm(10000, "$")
+atm = Atm(10000)
 counter = 0
 i = 0
 
