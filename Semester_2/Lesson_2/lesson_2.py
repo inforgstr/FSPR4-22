@@ -65,7 +65,8 @@ while True:
             if (
                 age.isdigit()
                 and (user.lower() not in USERS and user.upper() not in USERS)
-                and user.isalnum() and int(age) >= 18
+                and user.isalnum()
+                and int(age) >= 18
             ):
                 counter = 0
                 win = 1000000
@@ -138,13 +139,13 @@ while True:
                 with open("Semester_2/Lesson_2/file.csv", "a", newline="") as file:
                     writer = csv.writer(file)
                     writer.writerow(info)
-            elif (user.lower() in USERS or user.upper() in USERS):
+            elif user.lower() in USERS or user.upper() in USERS:
                 print("\nYour username must be non-identical!\n")
                 g += 1
                 req = input(
                     f"\tMENU:\n\t1 - START THE GAME\n\t2 - LEADERS\n\t3 - QUIT\n\n"
                 )
-            elif not(int(age) >= 18):
+            elif not (int(age) >= 18):
                 print("\nYour age must be at least 18!\n")
                 g += 1
                 req = input(
