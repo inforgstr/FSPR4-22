@@ -4,9 +4,16 @@ import csv
 
 leaders = {}
 
-print("""
-
-""")
+print(
+    """
+    ************WELCOME-TO*************
+    ************CASINO-GAME************
+    |         DOCUMENTATION           |
+    | 1.THE MINIMUM AGE MUST BE 18    |
+    | 2 USERNAME MUST BE NON-IDENTICAL|
+    ***********************************
+"""
+)
 
 req = input(f"\t  MENU:\n\t1 - START THE GAME\n\t2 - LEADERS\n\t3 - QUIT\n\n")
 
@@ -21,11 +28,11 @@ while True:
                 print("\n\tLEADERS\n\t||||||||||")
                 for row in reader:
                     if row[7] != "POINTS" and row[1] != "USERS":
-                        leaders[row[1]] = row[7]  # BY ID IT WILL BE EASIER
-                new_data = dict(
-                    sorted(leaders.items(), key=lambda x: x[1], reverse=True)
+                        leaders[row[1]] = row[7]
+                new_dict = dict(
+                    sorted(leaders.items(), key=lambda x: int(x[1]), reverse=True)
                 )
-                for user, a in new_data.items():
+                for user, a in new_dict.items():
                     print(f"\t{user} -- {a}")
                 file.close()
             q = input("\t||||||||||\n\nB - BACK.\n")
@@ -58,7 +65,7 @@ while True:
             if (
                 age.isdigit()
                 and (user.lower() not in USERS and user.upper() not in USERS)
-                and user.isalnum()
+                and user.isalnum() and int(age) >= 18
             ):
                 counter = 0
                 win = 1000000
@@ -75,13 +82,11 @@ while True:
                         if a < x:
                             print("Your number is less than random number!")
                             counter += 1
-                            if points >= 100:
-                                points -= 100
+                            points -= 10
                         elif a > x:
                             print("Your number is greater than random number!")
                             counter += 1
-                            if points >= 100:
-                                points -= 100
+                            points -= 10
                         elif a == x:
                             s = a
                             points += 100
@@ -90,6 +95,7 @@ while True:
                         if counter > 10:
                             print("You lose, lot of attempts!")
                             loses += 1
+                            points = 0
                             break
                     break
                 if counter <= 10:
@@ -132,6 +138,18 @@ while True:
                 with open("Semester_2/Lesson_2/file.csv", "a", newline="") as file:
                     writer = csv.writer(file)
                     writer.writerow(info)
+            elif (user.lower() in USERS or user.upper() in USERS):
+                print("\nYour username must be non-identical!\n")
+                g += 1
+                req = input(
+                    f"\tMENU:\n\t1 - START THE GAME\n\t2 - LEADERS\n\t3 - QUIT\n\n"
+                )
+            elif not(int(age) >= 18):
+                print("\nYour age must be at least 18!\n")
+                g += 1
+                req = input(
+                    f"\tMENU:\n\t1 - START THE GAME\n\t2 - LEADERS\n\t3 - QUIT\n\n"
+                )
             else:
                 print("\nWRONG CREDENTIALS!\n")
                 g += 1
