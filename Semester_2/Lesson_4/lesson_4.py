@@ -19,8 +19,11 @@ passport = input("Input your passport: ")
 age = input("Input your age: ")
 email = input("Input your email: ")
 
-with open("Semester_2/Lesson_4/file.csv", "a", newline="") as file:
+with open("Semester_2/Lesson_4/file.csv", "w+", newline="") as file:
     writer = csv.writer(file)
+    loader = csv.reader(file)
+    for i in loader:
+        print(i)
     i = 0
     while i != 3:
         ID = i + 1
