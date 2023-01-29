@@ -1,4 +1,4 @@
-class Atm:
+class ATM:
     def __init__(self, balance):
         self.balance = balance
         self.name = input("Input your user name: ")
@@ -74,7 +74,7 @@ USERS = {
 }
 
 
-atm = Atm(10000)
+atm = ATM(10000)
 counter = 0
 i = 0
 
@@ -83,9 +83,9 @@ print(
     ***********************************************
     |              Information:                   |
     |                                             |                    
-    |     ACCOUNT USERNAME: {atm.name.upper()}\t\t  |                      
+    |     ACCOUNT USERNAME: {ATM.name.upper()}\t\t  |                      
     |                                             |                          
-    |     ACCOUNT BALANCE: {atm.balance}\t          |                    
+    |     ACCOUNT BALANCE: {ATM.balance}\t          |                    
     |                                             |                    
     |                                             |                      
     |  MENU OF COMMANDS:                          |                    
@@ -107,7 +107,6 @@ request = input("\nLIMIT: 3min\nLog in or Sign up?\n\n")
 # Registration or Log in
 x = 0
 while True:
-    time.sleep(1)
     if request.lower() == "log in":
         btn = input("\nEnter 1 to exit from ATM, or just skip it to log in!.\n")
         if btn == "1":
@@ -124,7 +123,6 @@ while True:
         login = input("Input your email: ")
         password = input("Create a new password: ")
         while i <= 5:
-            time.sleep(1)
             if (
                 login.isascii()
                 and "@" in login
@@ -152,18 +150,18 @@ while True:
                 f"\t4 - Exchange\n\t5 - Transfer\n6 - exit from ATM\n{'_'*36}\n\n"
             )
             if command == "1":
-                print(atm.Balance())
+                print(ATM.Balance())
 
             elif command == "2":
-                print(atm.get_cash())
+                print(ATM.get_cash())
 
             elif command == "3":
-                print(atm.deposit())
+                print(ATM.deposit())
 
             elif command == "4":
-                atm.cur_exchange()
+                ATM.cur_exchange()
             elif command == "5":
-                print(atm.transfer())
+                print(ATM.transfer())
             elif command == "6":
                 break
             else:

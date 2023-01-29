@@ -6,12 +6,16 @@ leaders = {}
 
 print(
     """
-    ************WELCOME-TO*************
-    ************CASINO-GAME************
-    |         DOCUMENTATION           |
-    | 1.THE MINIMUM AGE MUST BE 18    |
-    | 2 USERNAME MUST BE NON-IDENTICAL|
-    ***********************************
+    ************WELCOME-TO***************
+    ************CASINO-GAME**************
+    |         DOCUMENTATION             |
+    | 1. YOUR AGE MUST BE AT LEAST 18   |
+    | 2. USERNAME MUST BE NON-IDENTICAL |
+    |                                   |
+    |                                   |
+    |       FOR EVERY INCORRECT ANSWERS |
+    |                        -10 POINTS |
+    *************************************
 """
 )
 
@@ -29,9 +33,11 @@ while True:
                 for row in reader:
                     if row[7] != "POINTS" and row[1] != "USERS":
                         leaders[row[1]] = row[7]
-                new_dict = dict(
-                    sorted(leaders.items(), key=lambda x: int(x[1]), reverse=True)
-                )
+
+                def run(word):
+                    return int(word[1])
+
+                new_dict = dict(sorted(leaders.items(), key=run, reverse=True))
                 for user, a in new_dict.items():
                     print(f"\t{user} -- {a}")
                 file.close()
