@@ -41,11 +41,9 @@ class ATM:
                     amount / 0.000071,
                 ]
                 counter = 1
-                for i in range(len(type)):
-                    if counter == 7:
-                        counter = 0
-                    if type == str(counter):
-                        print(f"Total: {total[i]:.2f} has been exchanged!")
+                for i in range(len(total)):
+                    if type == f"{counter}":
+                        print(f"\nTotal: {total[i]:.2f} has been exchanged!\n\n")
                     counter += 1
                     
             elif amount > self.balance:
