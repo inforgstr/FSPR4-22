@@ -199,3 +199,4 @@ while x != 1:
         counter = 0
         print("You were blocked!")
         request = input("\nLog in or Sign up?\nENTER 1 TO QUIT\n\n")
+
