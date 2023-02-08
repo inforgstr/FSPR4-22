@@ -40,3 +40,4 @@ with open("Semester_2/Lesson_4/file.csv", "w+", newline="") as file:
             email = input("Input your email: ")
             i += 1
     writer.writerows(row_list)
+
