@@ -1,5 +1,5 @@
 file = open("doc_1.txt", "w")
-lst = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+colors = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 
-for item in lst:
+for item in colors:
     file.write(item+"\n")
