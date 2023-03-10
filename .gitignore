@@ -101,8 +101,9 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Pycharm idea
+# system files
 .idea/
+.vscode/
 
 # Environments
 .env
