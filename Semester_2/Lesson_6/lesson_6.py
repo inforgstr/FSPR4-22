@@ -21,8 +21,8 @@ mydb = mysql.connector.connect(
     database="mydatabase",
 )
 
-mycursor = mydb.cursor()
 
+mycursor = mydb.cursor()
 
 
 for x in mycursor:
