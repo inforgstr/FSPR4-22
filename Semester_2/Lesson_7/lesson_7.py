@@ -42,7 +42,7 @@ with open("data.json") as f:
 
 
 r = [1, 9, 0, 7]
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+numbers = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
 
 val = [
     (
@@ -52,8 +52,9 @@ val = [
         random.choice((0, 1)),
         f"{random.choice(['django', 'javascript', 'java', 'flutter', 'python'])} - {random.choice([x for x in range(1, 31)])}",
         "Hper st.", 
-        f"+9989{random.choice(r)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}") 
-        for x in range(1000)
+        f"+9989{random.choice(r)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}{random.choice(numbers)}"
+    ) 
+        for x in range(10)
 ]
 
 
