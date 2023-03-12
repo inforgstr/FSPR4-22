@@ -24,6 +24,6 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 mycursor.execute("SHOW DATABASES;")
-
+mycursor.execute("CREATE DATABASE IF NOT EXISTS mydatabase;")
 for x in mycursor:
     print(x)
