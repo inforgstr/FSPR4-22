@@ -41,4 +41,3 @@ with open("Semester_2/Lesson_4/file.csv", "w+", newline="") as file:
             i += 1
     writer.writerows(row_list)
 
-
