@@ -1,0 +1,38 @@
+{
+    "user_data": [
+        [
+            "John",
+            "Walter"
+        ],
+        [
+            "Nick",
+            "Walter"
+        ],
+        [
+            "Emma",
+            "Smith"
+        ],
+        [
+            "Bob",
+            "Tylon"
+        ]
+    ],
+    "product_data": [
+        [
+            "Milk",
+            8
+        ],
+        [
+            "Water",
+            6
+        ],
+        [
+            "Cocktail",
+            7
+        ],
+        [
+            "phone",
+            5
+        ]
+    ]
+}
