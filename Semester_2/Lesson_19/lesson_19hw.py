@@ -98,6 +98,7 @@ def n_nested(lst: list) -> int:
             return n_nested(value)
         return 1
     print(value, n)
+    
 
 
 print(n_nested([2, [2, 3, [[[[[[[[5]]]]]]]]]]))
