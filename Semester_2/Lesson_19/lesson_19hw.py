@@ -96,7 +96,7 @@ for i in range(13):
 
 
 # With recursive
-def n_nested(lst: list) -> int:
+def n_nested(lst: list, nums=0) -> int:
     """
     Args:
         lst (list): iterable
@@ -104,14 +104,11 @@ def n_nested(lst: list) -> int:
     Returns:
         int: Number of nested lists
     """
-    n = 0
-
-    for value in lst:
-        if isinstance(value, list):
-            n += 1
-            return n_nested(value)
-        return 1
-    print(value, n)
+    for var in lst:
+        if isinstance(var, list):
+            nums += 1
+            return n_nested(var, nums)
+    return nums
     
 
 
