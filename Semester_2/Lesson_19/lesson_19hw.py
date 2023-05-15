@@ -6,7 +6,7 @@ HW:
 
 
 """ex: 1"""
-# Problem for 6kyu - problem name +1 Array:
+# Problem for 6kyu - problem name `+1 Array`:
 # https://www.codewars.com/kata/5514e5b77e6b2f38e0000ca9/train/python
 
 def up_array(arr: list[int]) -> list[int]:
@@ -37,7 +37,28 @@ def up_array(arr: list[int]) -> list[int]:
     return arr
 
 
+# Problem for 6kyu - problem name `Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!`   
+# https://www.codewars.com/kata/5626b561280a42ecc50000d1/train/python
 
+def sum_dig_pow(a, b):
+    """
+    range(a, b + 1) will be studied by the function
+    """
+    result = []
+    counter = 1
+    
+    for x in range(a, b+1):
+        num = 0
+
+        for digit in str(x):
+            num += int(digit)**counter
+
+            counter += 1
+        if num==x:
+            result.append(num)
+
+        counter = 1
+    return result
 
 
 """ex: 2"""
