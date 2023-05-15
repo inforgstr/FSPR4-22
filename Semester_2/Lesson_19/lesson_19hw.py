@@ -6,6 +6,20 @@ HW:
 
 
 """ex: 1"""
+
+# Problem for 5kyu - problem name `Human Readable Time`:
+# https://www.codewars.com/kata/52685f7382004e774f0001f7/train/python
+
+def make_readable(seconds):
+    hours = seconds//3600
+    minutes = (seconds-hours*3600)//60
+    sec = seconds - (hours*3600+minutes*60)
+
+    lst = [f"0{x}" if len(str(x))==1 else str(x) for x in (hours, minutes, sec)]
+    return ":".join(lst)
+
+
+
 # Problem for 6kyu - problem name `+1 Array`:
 # https://www.codewars.com/kata/5514e5b77e6b2f38e0000ca9/train/python
 
