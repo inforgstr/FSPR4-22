@@ -1,5 +1,5 @@
 """
-Написать реализацию функции map и filter
+Написать реализацию функции map и filter.
 """
 # map
 def map_2(func, *iterable):
@@ -17,7 +17,7 @@ def map_2(func, *iterable):
     return [func(*d[variable]) for variable in d]
 
 
-print(map_2(lambda x, y, z: x+y+z, [1, 2], [2, 3, 4], [10]))
+print(map_2(lambda x, y, z: x+y+z, [1, 2], [2, 3, 4], [10, 12, 2, 3, 4]))
 
 
 # filter
@@ -25,4 +25,4 @@ def filter_2(func, iterable):
     return [variable for variable in iterable if func(variable)]
 
 
-print(filter_2(lambda x: x > 1, [1, 2, 1, 1]))
+# print(filter_2(lambda x: x > 1, [1, 2, 1, 1]))
