@@ -68,12 +68,12 @@ def buy(name: str, amount: int, price: int) -> str:
     for item in data["products"]:
         if (
             name == item["name"]
-            and price >= item["price"]
+            and price*amount >= item["price"]*amount
             and amount <= item["quantity"]
         ):
-            return f"Successful, for {name}! Your purchase has bought!\nYour remainder - {price-item['price']} $."
+            return f"Successful, for {name}! Your purchase has bought!\nYour remainder - {price-item['price']*amount} $.\n\nAmount - {amount}"
         else:
             return "Wrong credentials!\n\nPlease, check your data and resubmit your purchase!"
 
 
-print(buy("Phone", 30, 2000))
+print(buy("Phone", 28, 28000))
