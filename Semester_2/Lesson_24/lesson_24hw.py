@@ -2,7 +2,7 @@ import time
 import itertools
 
 
-def fibbonnaci_generator(n):
+def fibonacci_generator(n):
     fib1 = 0
     fib2 = 1
 
@@ -17,7 +17,7 @@ def fibbonnaci_generator(n):
 
 
 # start = time.perf_counter()
-# print(list(fibbonnaci_generator(1000)), f"{time.perf_counter()-start:8f} ms")
+# print(list(fibonacci_generator(1000)), f"{time.perf_counter()-start:8f} ms")
 
 
 def factorial_generator(n):
@@ -30,5 +30,3 @@ def factorial_generator(n):
 
 
 # fact = factorial_generator(10)
-
-
