@@ -23,10 +23,10 @@ def fibonacci_generator(n):
 def factorial_generator(n):
     term = 1
 
-    for _ in range(2, n+1):
+    for _ in range(1, n+1):
         c = term * _
         yield c
         term = c
 
 
-# fact = factorial_generator(10)
+fact = factorial_generator(10)
