@@ -50,12 +50,13 @@ posts = [
 
 def find_similars(data: list[dict]) -> str:
     """
-    Args:
-        data: int(dict)
-    Returns:
-        Done if code without exceptions
+    Find similar data based on tags and dump it into a JSON file.
 
-    Dumps json file all data that filtered with similitaries tags and data.
+    Args:
+        data: List of dictionaries representing the data.
+
+    Returns:
+        A string indicating the status of the function.
     """
     similarities = []
 
