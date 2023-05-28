@@ -62,16 +62,16 @@ def find_similars(data: list[dict]) -> str:
 
     # Iterate over each dictionary in the data list
     for i in range(len(data)):
-        # Split the tags string into a list and update the dictionary
-        data[i]["tags"] = data[i]["tags"].split(", ")
-
-        # Get the list of tags for the current dictionary
-        data_tags = data[i]["tags"]
-
-        # Initialize a counter to track the number of similarities
-        counter = 0
-
         try:
+            # Split the tags string into a list and update the dictionary
+            data[i]["tags"] = data[i]["tags"].split(", ")
+
+            # Get the list of tags for the current dictionary
+            data_tags = data[i]["tags"]
+
+            # Initialize a counter to track the number of similarities
+            counter = 0
+
             # Iterate over each tag in the list of tags
             for tag in range(len(data_tags)):
                 # Iterate over each dictionary in the data list, excluding the current dictionary
@@ -88,7 +88,7 @@ def find_similars(data: list[dict]) -> str:
                 # If it is not the last tag, increment the similary quantity
                 elif tag < len(data_tags) - 1:
                     counter += 1
-        except TypeError as te:
+        except (TypeError, KeyError):
             continue
     # sorting with sorted function, that makes sortlist with most similtar value
     similarities = sorted(similarities, key=lambda x: x[1]["published"])

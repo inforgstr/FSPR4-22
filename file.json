@@ -6,4 +6,59 @@
         ],
         "title": "Random title",
         "body": "lajksdfjksdf",
-        "published": 
+        "published": "2019-04-11"
+    },
+    {
+        "tags": [
+            "django",
+            "jazz"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2019-04-11"
+    },
+    {
+        "tags": [
+            "django",
+            "jazz"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2023-04-11"
+    },
+    {
+        "tags": [
+            "django",
+            "music"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2021-04-12"
+    },
+    {
+        "tags": [
+            "django",
+            "music"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2023-04-12"
+    },
+    {
+        "tags": [
+            "django",
+            "pop"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2022-04-12"
+    },
+    {
+        "tags": [
+            "jazz"
+        ],
+        "title": "Random title",
+        "body": "lajksdfjksdf",
+        "published": "2020-04-11"
+    }
+]
