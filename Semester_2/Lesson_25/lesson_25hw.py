@@ -55,42 +55,60 @@ def find_similars(data: list[dict]) -> str:
     Returns:
         Done if code without exceptions
 
-    Dumps json file all data that filtered with similitaries tags.
+    Dumps json file all data that filtered with similitaries tags and data.
     """
-    similarity = []
+    similarities = []
 
-    # sorting by tag
+    # Iterate over each dictionary in the data list
     for i in range(len(data)):
+        # Split the tags string into a list and update the dictionary
         data[i]["tags"] = data[i]["tags"].split(", ")
-        d = data[i]["tags"]
-        c = 0
-        for tag in range(len(d)):
-            for x in data[:i] + data[i + 1 :]:
-                if d[tag] in x["tags"]:
-                    c += 1
 
-            if c >= 1 and tag == len(d) - 1:
-                similarity.append((c, data[i]))
+        # Get the list of tags for the current dictionary
+        data_tags = data[i]["tags"]
 
-            elif tag < len(d) - 1:
-                c += 1
+        # Initialize a counter to track the number of similarities
+        counter = 0
 
-    # sorting with sorted function, that makes sortlist with most similtary value
-    similarity = sorted(similarity, key=lambda x: x[1]["published"])
+        try:
+            # Iterate over each tag in the list of tags
+            for tag in range(len(data_tags)):
+                # Iterate over each dictionary in the data list, excluding the current dictionary
+                for x in data[:i] + data[i + 1 :]:
+                    # Check if the current tag is present in the "tags" key of other dictionaries
+                    if data_tags[tag] in x["tags"]:
+                        counter += 1
 
-    # sorting with date
-    result = [x[1] for x in sorted(similarity, key=lambda x: x[0], reverse=True)]
+                # If there is at least one similarity and it is the last tag in the list,
+                # append a tuple with the similarity count and the current dictionary to the similarities list
+                if counter >= 1 and tag == len(data_tags) - 1:
+                    similarities.append((counter, data[i]))
+
+                # If it is not the last tag, increment the similary quantity
+                elif tag < len(data_tags) - 1:
+                    counter += 1
+        except TypeError as te:
+            continue
+    # sorting with sorted function, that makes sortlist with most similtar value
+    similarities = sorted(similarities, key=lambda x: x[1]["published"])
+
+    # sorting all dates
+    result = [x[1] for x in sorted(similarities, key=lambda x: x[0], reverse=True)]
 
     # rewriting date into string, avoid JSON erros
-    for x in result:
-        x["published"] = str(x["published"])
+    # for x in result:
+    #     x["published"] = str(x["published"])
 
-
-    # saving json file
-    with open("file.json", "w") as file:
-        json.dump(result, file, indent=4)
-
-    # result
+    try:
+        # saving result in json file
+        with open("file.json", "w") as file:
+            json.dump(result, file, indent=4)
+    except TypeError as te:
+        return (
+            "Please check your dictionary data, once you change it into string.\nException: %s"
+            % te
+        )
+    # return Done if the function completed its work correctly
     return "Done!"
 
 
