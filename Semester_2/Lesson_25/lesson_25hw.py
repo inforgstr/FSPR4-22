@@ -97,8 +97,8 @@ def find_similars(data: list[dict]) -> str:
     result = [x[1] for x in sorted(similarities, key=lambda x: x[0], reverse=True)]
 
     # rewriting date into string, avoid JSON erros
-    # for x in result:
-    #     x["published"] = str(x["published"])
+    for x in result:
+        x["published"] = str(x["published"])
 
     try:
         # saving result in json file
