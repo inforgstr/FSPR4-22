@@ -1,64 +1,148 @@
 [
     {
+        "title": "React Native Mobile App Development",
         "tags": [
-            "django",
-            "django"
+            "programming",
+            "JavaScript",
+            "mobile app",
+            "development",
+            "framework",
+            "React Native"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2019-04-11"
+        "body": "Create cross-platform mobile applications using React Native framework and leverage its component-based architecture and native UI elements.",
+        "published": "2021-01-01"
     },
     {
+        "title": "Express.js Node.js Framework",
         "tags": [
-            "django",
-            "jazz"
+            "programming",
+            "JavaScript",
+            "web development",
+            "framework",
+            "Express.js",
+            "Node.js"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2019-04-11"
+        "body": "Build scalable and high-performance web applications using the Express.js framework with Node.js, focusing on simplicity and minimalist design.",
+        "published": "2022-02-17"
     },
     {
+        "title": "Spring Boot Java Framework",
         "tags": [
-            "django",
-            "jazz"
+            "programming",
+            "Java",
+            "web development",
+            "framework",
+            "Spring Boot"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2023-04-11"
+        "body": "Develop enterprise-grade Java applications quickly with Spring Boot framework, leveraging its auto-configuration, dependency management, and production-ready features.",
+        "published": "2022-01-03"
     },
     {
+        "title": "Laravel PHP Framework",
         "tags": [
-            "django",
-            "music"
+            "programming",
+            "PHP",
+            "web development",
+            "framework",
+            "Laravel"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2021-04-12"
+        "body": "Build elegant and feature-rich web applications using the Laravel framework with its expressive syntax, ORM, routing, and caching capabilities.",
+        "published": "2020-12-05"
     },
     {
+        "title": "Symfony PHP Framework",
         "tags": [
-            "django",
-            "music"
+            "programming",
+            "PHP",
+            "web development",
+            "framework",
+            "Symfony"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2023-04-12"
+        "body": "Develop scalable and maintainable web applications using the Symfony framework with its reusable components, ORM, and testing utilities.",
+        "published": "2022-09-14"
     },
     {
+        "title": "Django Web Development",
         "tags": [
-            "django",
-            "pop"
+            "programming",
+            "Python",
+            "web development",
+            "framework",
+            "Django"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2022-04-12"
+        "body": "Build robust and scalable web applications using the Django framework with its powerful features like ORM, templating, and authentication.",
+        "published": "2023-01-01"
     },
     {
+        "title": "Flask Microframework",
         "tags": [
-            "jazz"
+            "programming",
+            "Python",
+            "web development",
+            "framework",
+            "Flask"
         ],
-        "title": "Random title",
-        "body": "lajksdfjksdf",
-        "published": "2020-04-11"
+        "body": "Create lightweight and modular web applications using the Flask microframework and its flexible routing, templating, and extension ecosystem.",
+        "published": "2023-10-07"
+    },
+    {
+        "title": "ASP.NET Core Framework",
+        "tags": [
+            "programming",
+            "C#",
+            "web development",
+            "framework",
+            "ASP.NET Core"
+        ],
+        "body": "Create modern and cross-platform web applications using the ASP.NET Core framework with its powerful features like MVC pattern, dependency injection, and built-in support for RESTful APIs.",
+        "published": "2023-07-10"
+    },
+    {
+        "title": "Ruby on Rails Web Development",
+        "tags": [
+            "programming",
+            "Ruby",
+            "web development",
+            "framework",
+            "Ruby on Rails"
+        ],
+        "body": "Build modern web applications rapidly using Ruby on Rails framework with its conventions, MVC architecture, and built-in libraries.",
+        "published": "2023-10-14"
+    },
+    {
+        "title": "Vue.js Frontend Framework",
+        "tags": [
+            "programming",
+            "JavaScript",
+            "frontend development",
+            "framework",
+            "Vue.js"
+        ],
+        "body": "Develop interactive user interfaces and single-page applications using the Vue.js framework with its intuitive syntax and reactivity.",
+        "published": "2021-10-13"
+    },
+    {
+        "title": "Angular Frontend Framework",
+        "tags": [
+            "programming",
+            "JavaScript",
+            "frontend development",
+            "framework",
+            "Angular"
+        ],
+        "body": "Develop dynamic and interactive web applications using the Angular framework with its powerful features like two-way data binding and dependency injection.",
+        "published": "2022-03-21"
+    },
+    {
+        "title": "Ember.js Frontend Framework",
+        "tags": [
+            "programming",
+            "JavaScript",
+            "frontend development",
+            "framework",
+            "Ember.js"
+        ],
+        "body": "Build ambitious web applications using the Ember.js framework with its conventions, data binding, and routing capabilities.",
+        "published": "2023-05-21"
     }
 ]
