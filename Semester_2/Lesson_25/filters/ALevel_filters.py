@@ -1,5 +1,6 @@
 import json
 import os
+import datetime
 
 from pathlib import Path
 
@@ -72,5 +73,25 @@ def find_similars(data: list[dict]) -> str:
             "Please check your dictionary data, once you change it into string.\nException: %s"
             % te
         )
-    # return Done if the function completed its work correctly
-    return "Done!"
+
+    # If result not empty
+    if result:
+        # If there are results, print the count and the first tag
+        print("Have found %s on %s tag:\n" % (len(result), result[0]["tags"][0]))
+
+
+        for res in result:
+            # Extract the relevant information from each result
+            title = res["title"]
+            tag = res["tags"][1]
+            published_date = res["published"]
+
+            # Extract the relevant information from each result
+            s = f"\t- {title}"
+            c = "_" * (len(s) + 3)
+
+
+            # Print the formatted result with title, tag, published date, and separator line
+            print(f"{s}\n\t\t- {tag} - {published_date}\n\t{c}")
+    else:
+        print("No such results for each tags.")
