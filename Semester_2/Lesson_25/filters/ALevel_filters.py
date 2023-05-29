@@ -1,6 +1,7 @@
 import json
 import os
-import datetime
+import time
+
 
 from pathlib import Path
 
@@ -15,7 +16,9 @@ def find_similars(data: list[dict]) -> str:
     Returns:
         A string indicating the status of the function.
     """
+    start = time.perf_counter()
     similarities = []
+    most_similar_tags = []
 
     # Iterate over each dictionary in the data list
     for i in range(len(data)):
@@ -35,6 +38,8 @@ def find_similars(data: list[dict]) -> str:
                 for x in data[:i] + data[i + 1 :]:
                     # Check if the current tag is present in the "tags" key of other dictionaries
                     if data_tags[tag] in x["tags"]:
+                        # add to most_similar_tags for undestandable output
+                        most_similar_tags.append(data_tags[tag])
                         counter += 1
 
                 # If there is at least one similarity and it is the last tag in the list,
@@ -80,14 +85,16 @@ def find_similars(data: list[dict]) -> str:
 
         except TypeError:
             pass
-    
+
     # Call save_json function to save result
     save_json(result)
-    
+
     # If result not empty
     if result:
         # If there are results, print the count and the first tag
-        print("Have found %s on %s tag:\n" % (len(result), result[0]["tags"][0]))
+        print(
+            f"Have found {len(result)} on {most_similar_tags[0]} tag\n- {time.perf_counter()-start:8f} ms:\n"
+        )
 
         for res in result:
             # Extract the relevant information from each result
