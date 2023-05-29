@@ -81,7 +81,7 @@ def find_similars(data: list[dict]) -> str:
         except TypeError:
             pass
     
-    # Call save_json function for saving result
+    # Call save_json function to save result
     save_json(result)
     
     # If result not empty
