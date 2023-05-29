@@ -85,5 +85,5 @@ posts = [
     },
 ]
 
-# Create json file which consists posts ordered by date and tag
+# Create json file which consists posts ordered by date and tag. And prints result of filtered data
 Alevel.find_similars(posts)

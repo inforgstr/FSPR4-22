@@ -54,31 +54,40 @@ def find_similars(data: list[dict]) -> str:
     for x in result:
         x["published"] = str(x["published"])
 
-    try:
-        # create base variable to set path to main directory
-        base = Path(__file__).resolve().parent.parent
+    def save_json(result: list[dict]) -> None:
+        """
+        Save result list/dict to JSON file
 
-        # check if path is available
+        Args:
+            result: Dictionaries of List
+
+        Returns:
+            None
+        """
         try:
-            os.mkdir("%s/results/" % base)
-        except (OSError, FileExistsError):
+            # create base variable to set path to main directory
+            base = Path(__file__).resolve().parent.parent
+
+            # check if path is available
+            try:
+                os.mkdir("%s/results/" % base)
+            except (OSError, FileExistsError):
+                pass
+
+            # saving result into json file
+            with open("%s/results/file.json" % base, "w") as file:
+                json.dump(result, file, indent=4)
+
+        except TypeError:
             pass
-
-        # saving result into json file
-        with open("%s/results/file.json" % base, "w") as file:
-            json.dump(result, file, indent=4)
-
-    except TypeError as te:
-        return (
-            "Please check your dictionary data, once you change it into string.\nException: %s"
-            % te
-        )
-
+    
+    # Call save_json function for saving result
+    save_json(result)
+    
     # If result not empty
     if result:
         # If there are results, print the count and the first tag
         print("Have found %s on %s tag:\n" % (len(result), result[0]["tags"][0]))
-
 
         for res in result:
             # Extract the relevant information from each result
@@ -89,7 +98,6 @@ def find_similars(data: list[dict]) -> str:
             # Extract the relevant information from each result
             s = f"\t- {title}"
             c = "_" * (len(s) + 3)
-
 
             # Print the formatted result with title, tag, published date, and separator line
             print(f"{s}\n\t\t- {tag} - {published_date}\n\t{c}")
