@@ -1,8 +1,3 @@
-"""
-
-"""
-
-
 import csv
 
 
@@ -37,6 +32,8 @@ def update_csv_file(
 
 
 class Store:
+    purchases = []
+
     def __init__(self, name, password, email, card_code, card_balance):
         self.name = name
         self.password = password
@@ -52,7 +49,7 @@ class Store:
             if email != user["email"] and user["password"] != password:
                 continue
             else:
-                return cls(name, password, email, card_code, card_balance)
+                return "User is alredy registered, please try to set other name and password!"
 
         if not (name and email and password and card_balance and card_code):
             return "Empty values were given."
@@ -68,15 +65,7 @@ class Store:
 
                 user_writer = csv.DictWriter(
                     user_write,
-                    fieldnames=[
-                        "id",
-                        "name",
-                        "password",
-                        "email",
-                        "purchases",
-                        "card_code",
-                        "card_balance",
-                    ],
+                    fieldnames=list(USERS[0].keys()),
                     delimiter=";",
                 )
                 user_writer.writerow(
@@ -98,8 +87,12 @@ class Store:
 
         if not (email and password):
             return "Empty values were given."
-        for user in USERS:
+        for index, user in enumerate(USERS):
             if user["email"] == email and password == user["password"]:
+                cls.purchases = get_csv("users.csv", delimiter=";")[index][
+                    "purchases"
+                ].split(",")
+
                 return cls(
                     user["name"],
                     password,
@@ -107,17 +100,10 @@ class Store:
                     user["card_code"],
                     int(user["card_balance"]),
                 )
-            else:
-                return "Wrong email or password"
+
+        return "Wrong email or password"
 
     def purchase(self, product, count):
-        """
-        - purchase - метод для покупки товаров.
-        Для покупки вам нужно узнать, какой товар хочет купить человек и есть у него достаточно денег для этого.
-        Если условия верны, то человек покупает товар и с его счета снимаются деньги
-        Если товара нет в списке товаров, вывести сообщение что товара нет, если не достаточно денег,
-        то вывести сообщение что не достаточно средств.
-        """
         if self.card_balance <= 0:
             return "Not enought balance!"
 
@@ -139,6 +125,8 @@ class Store:
                         and count <= int(pr["count"])
                     ):
                         self.card_balance -= product_price
+
+                        users_header = list(USERS[0].keys())
                         # substracting user balance in csv file
                         update_csv_file(
                             "users.csv",
@@ -146,15 +134,7 @@ class Store:
                             "card_balance",
                             product_price,
                             action="int-",
-                            fieldnames=[
-                                "id",
-                                "name",
-                                "password",
-                                "email",
-                                "purchases",
-                                "card_code",
-                                "card_balance",
-                            ],
+                            fieldnames=users_header,
                         )
                         # adding product to user csv purchases and class's purchase list
                         update_csv_file(
@@ -163,15 +143,7 @@ class Store:
                             "purchases",
                             product,
                             action="str",
-                            fieldnames=[
-                                "id",
-                                "name",
-                                "password",
-                                "email",
-                                "purchases",
-                                "card_code",
-                                "card_balance",
-                            ],
+                            fieldnames=users_header,
                             count=count,
                         )
                         set_user_purchases = get_csv("users.csv", delimiter=";")[index][
@@ -185,13 +157,7 @@ class Store:
                             "count",
                             count,
                             action="int-",
-                            fieldnames=[
-                                "id",
-                                "product_name",
-                                "count",
-                                "price",
-                                "color",
-                            ],
+                            fieldnames=list(PRODUCTS[0].keys()),
                         )
                         all_purchases = "\n\t".join(self.purchases)
                         return f"\n\nSuccessfull! Balance: {self.card_balance}\n{user['name']} purchases:\n\t{all_purchases}"
