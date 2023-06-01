@@ -3,7 +3,7 @@ import csv
 
 # get list of exact file
 def get_csv(file_path: str, delimiter: str) -> list[dict]:
-    with open(file_path, "r") as reader:
+    with open(file_path, "r", encoding="utf-8") as reader:
         return list(csv.DictReader(reader, delimiter=delimiter))
 
 
@@ -11,7 +11,7 @@ def get_csv(file_path: str, delimiter: str) -> list[dict]:
 def update_csv_file(
     path: str, index: int, column: str, new_value, action, fieldnames, count=1
 ) -> None:
-    with open(path, "r") as file:
+    with open(path, "r", encoding="utf-8") as file:
         reader = csv.DictReader(file, delimiter=";")
         data = list(reader)
 
@@ -25,7 +25,7 @@ def update_csv_file(
     else:
         data[index][column] += ",".join([new_value] * count)
 
-    with open(path, "w", newline="") as file:
+    with open(path, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames, delimiter=";")
         writer.writeheader()
         writer.writerows(data)
