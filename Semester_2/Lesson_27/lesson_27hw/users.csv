@@ -1,0 +1,6 @@
+id;name;password;email;purchases;card_code;card_balance;is_admin
+1;Name;234423lkjdf;dsfsf@gmail.com;phone,phone;8675968577688857;10000;0
+2;Strange;slkjdf89889;strange@gmail.com;phone,phone,phone,sweater,sweater,sweater;2345522345678964;1600;0
+3;Unknown;dfkjdf89889;unknown@gmail.com;;4345522345678964;20000;0
+4;Emma;23kjdodfkdjsof;emma@emma.com;sweater,sweater,sweater,sweater,sweater,sweater,sweater,sweater,sweater,sweater;4657675849586758;11000;1
+5;John;dfsfsafsdfasdf;john@john.com;;4657675849586758;12000;0
