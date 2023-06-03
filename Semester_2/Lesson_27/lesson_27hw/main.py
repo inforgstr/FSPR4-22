@@ -20,7 +20,26 @@ def get_csvdata(file_path, delimiter=";"):
             yield row
 
 
-def update_csv_file(path, index, column, new_value, action, fieldnames, count=1):
+def update_csv(path, index, column, new_value, action, fieldnames, count=1):
+    """
+    Args:
+        path(str): file path
+        index(int): the index where should be changed
+        column: column where should be changed
+        new_value: new value that should be set up for exists column
+        action(str): the action method for change document
+        fieldnames(list): the fields (headers) in csv file
+        count(int): the count of new value that should be changed by count
+
+    Returns:
+        returns None
+
+    action methods:
+    - int+: adds for integer type
+    - int-: substracts value by new_value for integer type
+    - str: just adds for string type
+    - replace: replaces value by new_value
+    """
     data = []
     with open(path, "r", encoding="utf-8") as file:
         reader = csv.DictReader(file, delimiter=";")
@@ -36,6 +55,8 @@ def update_csv_file(path, index, column, new_value, action, fieldnames, count=1)
                         row[column] += "," + ",".join([new_value] * count)
                     else:
                         row[column] += ",".join([new_value] * count)
+                elif action == "replace":
+                    row[column] = new_value
             data.append(row)
 
     with open(path, "w", newline="", encoding="utf-8") as file:
@@ -161,7 +182,7 @@ class Store:
 
                         user_headers = get_headers("users.csv")
                         # substracting user balance in csv file
-                        update_csv_file(
+                        update_csv(
                             "users.csv",
                             index,
                             "card_balance",
@@ -170,7 +191,7 @@ class Store:
                             fieldnames=user_headers,
                         )
                         # adding product to user csv purchases and class's purchase list
-                        update_csv_file(
+                        update_csv(
                             "users.csv",
                             index,
                             "purchases",
@@ -184,7 +205,7 @@ class Store:
                         ].split(",")
                         self.purchases = set_user_purchases
                         # substracting product quantity for every purchase
-                        update_csv_file(
+                        update_csv(
                             "products.csv",
                             i,
                             "count",
@@ -227,6 +248,6 @@ class Store:
 #     user_2 = Store.register(
 #         "John", "john@john.com", "dfsfsafsdfasdf", "4657675849586758", 12000, False
 #     )
-    # print(user_2.add_product("shirt", 30, 100, "white"))
-    # s = time.time()
-    # print(user_2.purchase("sweater", 1), f"{time.time()-s:8f}")
+#     print(user_2.add_product("shirt", 30, 100, "white"))
+#     s = time.time()
+#     print(user_2.purchase("sweater", 1), f"{time.time()-s:8f}")
