@@ -9,9 +9,9 @@ Functions for class Store
 
 def get_headers(file_path, delimiter=";"):
     with open(file_path, "r", encoding="utf-8") as headers:
-        data = csv.DictReader(headers, delimiter=delimiter).fieldnames
+        headers = csv.DictReader(headers, delimiter=delimiter).fieldnames
 
-    return data
+    return headers
 
 
 def get_csvdata(file_path, delimiter=";"):
