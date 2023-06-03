@@ -9,7 +9,9 @@ Functions for class Store
 
 def get_headers(file_path, delimiter=";"):
     with open(file_path, "r", encoding="utf-8") as headers:
-        return csv.DictReader(headers, delimiter=delimiter).fieldnames
+        data = csv.DictReader(headers, delimiter=delimiter).fieldnames
+
+    return data
 
 
 def get_csvdata(file_path, delimiter=";"):
@@ -239,8 +241,8 @@ class Store:
 
 # method = input("Chose method: login/register: ")
 # if method.lower() == "login":
-#     user_admin = Store.login("strange@gmail.com", "slkjdf89889")
-#     print(user_admin.add_product("laptop", 50, 2000, "gray"))
+#     user_admin = Store.login("emma@emma.com", "23kjdodfkdjsof")
+#     print(user_admin.add_product("shirt", 20, 100, "yellow"))
 #     user_1 = Store.login("strange@gmail.com", "slkjdf89889")
 #     s = time.time()
 #     print(user_1.purchase("sweater", 3), f"{time.time()-s:8f}")
