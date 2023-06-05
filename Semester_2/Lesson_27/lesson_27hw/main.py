@@ -39,7 +39,8 @@ def update_csv_by_column(path, index, column, new_value, action, fieldnames, cou
     action methods:
     - int+: adds for integer type
     - int-: substracts for integer type
-    - str: adds for string type
+    - str+: adds for string type
+    - str-: remove one of items by new_value from existing value
     - replace: replaces value by new_value
     """
     data = []
