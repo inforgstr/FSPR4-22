@@ -22,7 +22,7 @@ def get_csvdata(file_path, delimiter=";"):
             yield row
 
 
-def update_csv(path, index, column, new_value, action, fieldnames, count=1):
+def update_csv_by_column(path, index, column, new_value, action, fieldnames, count=1):
     """
     Args:
         path(str): file path
@@ -34,37 +34,78 @@ def update_csv(path, index, column, new_value, action, fieldnames, count=1):
         count(int): the count of new value that should be changed by count
 
     Returns:
-        returns None
+        returns None if code worked correctly
 
     action methods:
     - int+: adds for integer type
-    - int-: substracts value by new_value for integer type
-    - str: just adds for string type
+    - int-: substracts for integer type
+    - str: adds for string type
     - replace: replaces value by new_value
     """
     data = []
     with open(path, "r", encoding="utf-8") as file:
         reader = csv.DictReader(file, delimiter=";")
 
-        for i, row in enumerate(reader):
-            if i == index:
-                if action == "int+":
-                    row[column] = int(row[column]) + (new_value * count)
-                elif action == "int-":
-                    row[column] = int(row[column]) - (new_value * count)
-                elif action == "str":
-                    if row[column]:
-                        row[column] += "," + ",".join([new_value] * count)
-                    else:
-                        row[column] += ",".join([new_value] * count)
-                elif action == "replace":
-                    row[column] = new_value
-            data.append(row)
+        try:
+            for i, row in enumerate(reader):
+                if i == index:
+                    old_value = row.get(column)
+
+                    if old_value is None:
+                        raise KeyError("The column does not exists in csv document!")
+
+                    if action == "int+":
+                        row[column] = int(old_value) + (new_value * count)
+                    elif action == "int-":
+                        row[column] = int(old_value) - (new_value * count)
+                    elif action == "str+":
+                        if old_value:
+                            row[column] += "," + ",".join([new_value] * count)
+                        else:
+                            row[column] += ",".join([new_value] * count)
+                    elif action == "str-":
+                        modified = old_value.split(",")
+
+                        if old_value and new_value in modified:
+                            modified.remove(new_value)
+
+                            row[column] = ",".join(modified)
+                        else:
+                            raise TypeError(
+                                "Please try again! Make sure that your new_value in document column!"
+                            )
+                    elif action == "replace":
+                        row[column] = new_value
+                data.append(row)
+
+        except ValueError as error:
+            return error("Please try again! Check your data for correct data type.")
 
     with open(path, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames, delimiter=";")
         writer.writeheader()
         writer.writerows(data)
+
+    return "Success!\n"
+
+
+def delete_csv_row(file_path, index, fieldnames, delimiter=";"):
+    data = []
+    try:
+        with open(file_path, encoding="utf-8") as file:
+            reader = csv.DictReader(file, delimiter=delimiter)
+            for i, row in enumerate(reader):
+                if i != index:
+                    data.append(row)
+    except FileNotFoundError as error:
+        return error("Please make sure that file in directory!")
+
+    with open(file_path, "w", encoding="utf-8") as file:
+        writer = csv.DictWriter(file, fieldnames, delimiter=delimiter)
+        writer.writeheader()
+        writer.writerows(data)
+
+    return "\nSuccess!\n"
 
 
 def new_product(file_path: str, fields: list, result: dict, delimiter=";") -> None:
@@ -72,6 +113,8 @@ def new_product(file_path: str, fields: list, result: dict, delimiter=";") -> No
         writer = csv.DictWriter(file, fields, delimiter=delimiter)
 
         writer.writerow(result)
+
+    return "\nSuccess!\n"
 
 
 """
@@ -98,10 +141,12 @@ class Store:
             if email != user["email"] and user["password"] != password:
                 continue
             else:
-                return "User is alredy registered, please try to set other name and password!"
+                raise TypeError(
+                    "User is alredy registered, please try to set other name and password!"
+                )
 
         if not (name and email and password and card_balance and card_code):
-            return "Empty values were given."
+            raise TypeError("Empty values were given.")
 
         if (
             isinstance(name, str)
@@ -184,7 +229,7 @@ class Store:
 
                         user_headers = get_headers("users.csv")
                         # substracting user balance in csv file
-                        update_csv(
+                        update_csv_by_column(
                             "users.csv",
                             index,
                             "card_balance",
@@ -193,12 +238,12 @@ class Store:
                             fieldnames=user_headers,
                         )
                         # adding product to user csv purchases and class's purchase list
-                        update_csv(
+                        update_csv_by_column(
                             "users.csv",
                             index,
                             "purchases",
                             product,
-                            action="str",
+                            action="str+",
                             fieldnames=user_headers,
                             count=count,
                         )
@@ -207,7 +252,7 @@ class Store:
                         ].split(",")
                         self.purchases = set_user_purchases
                         # substracting product quantity for every purchase
-                        update_csv(
+                        update_csv_by_column(
                             "products.csv",
                             i,
                             "count",
@@ -238,18 +283,34 @@ class Store:
             return "Successfully added new product!"
         return "Please, try again! Enter admin password or email!"
 
+    def delete_user(self, username, email):
+        if self.is_admin and self.name != username and email != self.email:
+            users_data = get_csvdata("users.csv")
+
+            for i, user in enumerate(users_data):
+                if (
+                    user["name"] == username
+                    and user["email"] == email
+                    and not user["is_admin"]
+                ):
+                    return delete_csv_row("users.csv", i, get_headers("users.csv"))
+
+        return "You have not access to delete this user!"
+
 
 # method = input("Chose method: login/register: ")
 # if method.lower() == "login":
 #     user_admin = Store.login("emma@emma.com", "23kjdodfkdjsof")
-#     print(user_admin.add_product("shirt", 20, 100, "yellow"))
+#     print(user_admin.delete_user("Emma", "emma@emma.com"))
 #     user_1 = Store.login("strange@gmail.com", "slkjdf89889")
 #     s = time.time()
-#     print(user_1.purchase("sweater", 3), f"{time.time()-s:8f}")
+#     print(user_1.delete_user("Strange", "strange@gmail.com"), f"{time.time()-s:8f}")
 # elif method.lower() == "register":
 #     user_2 = Store.register(
-#         "John", "john@john.com", "dfsfsafsdfasdf", "4657675849586758", 12000, False
+#         "Tylor", "tylor@tylor.com", "dodno33ojd", "4657675849586758", 12000, True
 #     )
-#     print(user_2.add_product("shirt", 30, 100, "white"))
+#     print(user_2.add_product("bag", 50, 400, "green-red"))
 #     s = time.time()
 #     print(user_2.purchase("sweater", 1), f"{time.time()-s:8f}")
+# else:
+#     print("Please chose one of them!")
