@@ -132,7 +132,7 @@ class Store:
         self.email = email
         self.card_code = card_code
         self.card_balance = card_balance
-        self.is_admin = bool(is_admin)
+        self.is_admin = int(is_admin)
 
     @classmethod
     def register(cls, name, email, password, card_code, card_balance, is_admin):
