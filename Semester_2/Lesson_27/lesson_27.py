@@ -9,14 +9,11 @@ with open("passwords.csv", encoding="utf-8") as passwords:
     reader = csv.DictReader(passwords)
 
     for row in reader:
-        compromised_users.append(row)
+        compromised_users.append(row["Username"])
 
 with open("file.txt", "w") as file_txt:
     for user in compromised_users:
-        name = user["Username"]
-        password = user["Password"]
-        s = f"Name - {name}, Password - {password}\n"
-        file_txt.write(s)
+        file_txt.write(user+"\n")
 
 
 with open("boss_message.json", encoding="utf-8", mode="w") as boss_message_json:
