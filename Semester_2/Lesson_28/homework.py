@@ -71,7 +71,7 @@ titles = [
 for title in titles:
     patterns = r"([Jj]ava[Ss]cript|[Aa]ngular[Jj][sS]|[rR]eact|[Nn]ode[. ][jJ][sS])"
 
-    found_string = ", ".join(re.compile(patterns).findall(title))
+    found_string = ", ".join(re.findall(patterns, title))
     print(f"Found: {found_string}")
 
 # Навыки которые мы должны найти: javascript, angularjs, react, node js, node.js, nodejs
