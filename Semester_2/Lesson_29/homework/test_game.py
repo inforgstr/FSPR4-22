@@ -26,7 +26,7 @@ class TestRandomGame(unittest.TestCase):
         guess = 1
 
         result = find_num(test_value, guess)
-        self.assertEqual(result, None)
+        self.assertIsNone(result)
 
     def test_incorrect_numeric_guess(self):
         """Test when gues given as numeric in string (returns False)"""
@@ -34,7 +34,7 @@ class TestRandomGame(unittest.TestCase):
         guess = "3"
 
         result = find_num(test_value, guess)
-        self.assertEqual(result, None)
+        self.assertIsNone(result)
 
     def test_out_range_guess(self):
         """Test when guess out of range (returns False)"""
