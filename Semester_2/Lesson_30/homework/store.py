@@ -115,14 +115,14 @@ class Store:
         product_list = [product] * amount
         self.purchases += product_list
 
-        user_lst = False
+        user_exists = False
 
         for id, user in enumerate(USERS):
             if user["email"] == self.email and user["password"] == self.password:
-                user_lst = True
+                user_exists = True
                 USERS[id]["purchases"] += product_list
 
-        if not user_lst:
+        if not user_exists:
             return "User not found."
 
         commodity["count"] -= amount
