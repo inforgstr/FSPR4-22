@@ -55,7 +55,7 @@ class Store:
         if (
             isinstance(name, str)
             and re.match(r"^[A-Z]\w+$", name)
-            and re.match(r"^[\w.]+@[\w.]+$", email)
+            and re.match(r"^[\w.+-]+@[\w-]+\.[\w-]+$", email)
             and re.match(r"^[\w@#$]{6,16}$", password)
             and re.match(r"^\d{16}$", card_code)
             and re.match(r"^\d+$", str(card_balance))
