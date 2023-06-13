@@ -54,9 +54,7 @@ class TestStore(unittest.TestCase):
         card_balance = 10339
 
         result = self.store.register(name, email, password, card_code, card_balance)
-        self.assertEqual(
-            result, "User with this email or password is already exist."
-        )
+        self.assertEqual(result, "User with this email or password is already exist.")
 
     def test_store_register_field_fail(self):
         name = "johj"
@@ -107,7 +105,9 @@ class TestStore(unittest.TestCase):
         self.assertEqual(len(user.purchases), 1)
 
     def test_store_purchase_user_not_found(self):
-        user = self.store("Emma", "emma@emma.com", "ldskjf83#45", "8576857689878767", 300)
+        user = self.store(
+            "Emma", "emma@emma.com", "ldskjf83#45", "8576857689878767", 300
+        )
         result = user.purchase("bag", 1)
 
         self.assertEqual(result, "User not found.")
