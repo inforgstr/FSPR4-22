@@ -55,7 +55,7 @@ class TestStore(unittest.TestCase):
 
         result = self.store.register(name, email, password, card_code, card_balance)
         self.assertEqual(
-            result, "User with this email or password is already in exists."
+            result, "User with this email or password is already exists."
         )
 
     def test_store_register_field_fail(self):

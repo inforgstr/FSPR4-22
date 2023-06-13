@@ -47,7 +47,7 @@ class Store:
     def register(cls, name, email, password, card_code, card_balance):
         for user in USERS:
             if email == user["email"] and user["password"] == password:
-                return "User with this email or password is already in exists."
+                return "User with this email or password is already exists."
 
         if not (name and email and password and card_balance and card_code):
             return "Empty values were given."
