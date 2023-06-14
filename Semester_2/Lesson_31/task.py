@@ -6,10 +6,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 def txt_on_pics(file_read, file_write):
-    pics = os.listdir(file_read)
+    try:
+        pics = os.listdir(file_read)
+    except FileNotFoundError as error:
+        return error
 
     for pic in pics:
         pic_format = pic[pic.index(".") + 1 :]
+
         if pic_format in ("jpeg", "jpg", "png"):
             pic_path = os.path.join(file_read, pic)
             try:
