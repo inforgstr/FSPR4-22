@@ -10,12 +10,17 @@ def txt_on_pics(file_read, file_write):
         pics = os.listdir(file_read)
     except FileNotFoundError as error:
         return error
+    
+    font_path = "/usr/share/fonts/truetype/freefont/lato/Lato-Regular.ttf"
+    font_size = 30
+    txt_color = (255, 0, 0)
 
     for pic in pics:
-        pic_format = pic[pic.index(".") + 1 :]
+        pic_format = pic[pic.index(".") + 1 :].lower()
 
         if pic_format in ("jpeg", "jpg", "png"):
             pic_path = os.path.join(file_read, pic)
+
             try:
                 with Image.open(pic_path) as img:
                     img.load()
@@ -28,22 +33,20 @@ def txt_on_pics(file_read, file_write):
             # Drawing Hello, World! into picture
             draw = ImageDraw.Draw(img)
             txt = "Hello, World!"
-            fnt = ImageFont.truetype(
-                "/usr/share/fonts/truetype/freefont/lato/Lato-Regular.ttf", 28
-            )
-            position = (img.height - 180, img.width - 30)
+            fnt = ImageFont.truetype(font_path, font_size)
+            position = (img.width - 180, img.height - 30)
             txt_color = (200, 10, 40)
             draw.text(position, txt, fill=txt_color, font=fnt)
 
             if pic_format == "png":
-                format = "jpg"
+                output_format = "jpg"
             elif pic_format in ("jpg", "jpeg"):
-                format = "png"
+                output_format = "png"
 
-            pic_abs = pic[: pic.index(".")]
-            pic_save_path = os.path.join(file_write, f"{pic_abs}.{format}")
+            pic_abs = os.path.splitext(pic)[0]
+            pic_save_path = os.path.join(file_write, f"{pic_abs}.{output_format}")
 
-            img.save(pic_save_path, format)
+            img.save(pic_save_path, output_format)
 
     return "Success"
 
