@@ -5,7 +5,7 @@ import re
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from pratice.el import email_reciever
+from practice.el import email_reciever
 
 
 port = 465  # For SSL
