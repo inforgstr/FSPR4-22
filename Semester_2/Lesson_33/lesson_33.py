@@ -1,5 +1,4 @@
 import smtplib, ssl
-import os
 import re
 
 
@@ -8,32 +7,13 @@ from email.mime.multipart import MIMEMultipart
 from practice.el import email_reciever
 
 
-port = 465  # For SSL
-
-message = MIMEMultipart("alternative")
-message["Subject"] = "multipart test"
-message["From"] = os.environ.get("email")
-message["To"] = email_reciever
-
-
-sender_email = os.environ.get("email")
-password = os.environ.get("email_password")
-print(sender_email, password)
-reciever_email = email_reciever
-
-
 with open("data1.csv", "r", encoding="utf-8") as file:
     d = []
     for r in file.readlines():
         d.append(" | ".join((re.split(r"[\n,;]", r))) + "<br>")
     d.insert(1, len(d[1]) * "_" + "<br>")
 
-# text = """
-# Hi,\
-# How are you? \
-# Real Python was congrated you! \
-# www.realpytn.com \
-# """
+
 text = "".join(d)
 
 html = f"""\
@@ -47,18 +27,38 @@ html = f"""\
 </html>
 """
 
-part1 = MIMEText(text, "plain")
-part2 = MIMEText(html, "html")
+email_sender_list = {
+    "sdlkjflkdsj@gmail.com": "password1",
+    "slkdjflksjdf@gmail.com": "password2",
+    "slkdjlkdsjijei@gmail.com": "password3",
+}
 
-message.attach(part1)
-message.attach(part2)
+port = 465  # For SSL
 
-context = ssl.create_default_context()
+message = MIMEMultipart("alternative")
 
-print("Sending email...")
-with smtplib.SMTP_SSL("smtp.gmail.com", port=port, context=context) as server:
-    server.login(sender_email, password)
-    print("Logged in...")
 
-    server.sendmail(sender_email, reciever_email, message.as_string())
-    print("Email was sent!")
+for email, password in email_sender_list.items():
+    message["Subject"] = "multipart test"
+    message["From"] = email
+    message["To"] = email_reciever
+
+    sender_email = email
+    password = password
+    reciever_email = email_reciever
+
+    part1 = MIMEText(text, "plain")
+    part2 = MIMEText(html, "html")
+
+    message.attach(part1)
+    message.attach(part2)
+
+    context = ssl.create_default_context()
+
+    print("Sending email...")
+    with smtplib.SMTP_SSL("smtp.gmail.com", port=port, context=context) as server:
+        server.login(sender_email, password)
+        print("Logged in...")
+
+        server.sendmail(sender_email, reciever_email, message.as_string())
+        print("Email was sent!")
