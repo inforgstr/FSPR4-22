@@ -274,7 +274,7 @@ class Purchase:
         self.created_at = datetime.now()
         self.uploaded_at = datetime.now()
 
-    def create_load(cls, load_id, quantity, status, purchase_id, wagon_id):
+    def create_load(self, load_id, quantity, status, purchase_id, wagon_id):
         load = Load(load_id, quantity, status, purchase_id, wagon_id)
         return load
 
