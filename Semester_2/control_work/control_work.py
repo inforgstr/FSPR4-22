@@ -273,6 +273,7 @@ class Purchase:
         self.price = price
         self.created_at = datetime.now()
         self.uploaded_at = datetime.now()
+        self.loads = []
 
     def create_load(self, load_id, quantity, status, purchase_id, wagon_id):
         load = Load(load_id, quantity, status, purchase_id, wagon_id)
@@ -285,10 +286,12 @@ class Purchase:
     def ship_load(self, load_id, quantity, status, wagon_id, type, shipping_date, location, products):
         load = self.create_load(load_id, quantity, status, wagon_id)
         wagon = self.attach_wagon(wagon_id, type, status, shipping_date, location, products)
+        self.loads.append(load, wagon)
         return load, wagon
 
     def list_of_loads(self, loads):
         for load in loads:
+            load = load[0]
             print("Load id:", load.load_id)
             print("Quantity:", load.quantity)
             print("Status:", load.status)
