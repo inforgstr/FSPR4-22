@@ -274,7 +274,6 @@ class Purchase:
         self.created_at = datetime.now()
         self.uploaded_at = datetime.now()
 
-    @classmethod
     def create_load(cls, load_id, quantity, status, purchase_id, wagon_id):
         load = Load(load_id, quantity, status, purchase_id, wagon_id)
         return load
@@ -282,10 +281,19 @@ class Purchase:
     def attach_wagon(self, wagon_id, type, status, shipping_date, location, products):
         wagon = Wagon(wagon_id, type, status, shipping_date, location, products)
         return wagon
-    
-    @classmethod
-    def ship_load(cls):
-        load = super(cls).create_load()
+
+    def ship_load(self, load_id, quantity, status, wagon_id, type, shipping_date, location, products):
+        load = self.create_load(load_id, quantity, status, wagon_id)
+        wagon = self.attach_wagon(wagon_id, type, status, shipping_date, location, products)
+        return load, wagon
+
+    def list_of_loads(self, loads):
+        for load in loads:
+            print("Load id:", load.load_id)
+            print("Quantity:", load.quantity)
+            print("Status:", load.status)
+            print("Purchase id:", load.purchase_id)
+            print("Wagon ID:", load.wagon_id)
 
 
 # 3. Переписать данную функцию, используя генератор функцию, выведите ответ от каждого выражения и напишите коментарий того, что происходит
@@ -299,7 +307,7 @@ def rewrite(numbers_1, numbers_2):
     # Возвращает множество, являющееся пересечением множеств
     yield a & b
 
-    # Удаляет из множества a все элементыб входящие в b
+    # Удаляет из множества a все элементы входящие в b
     yield a - b
 
     # Возвращает симметрическую разность множеств a и b (элементы, входящие в a или в b, но не в оба из них одновременно)
