@@ -241,7 +241,7 @@ class Wagon:
         location,
         products,
         updated_at=datetime.now(),
-        created_at=datetime.now()
+        created_at=datetime.now(),
     ):
         if type.lower() not in ["truck", "ship", "wagon"]:
             raise TypeError
@@ -267,7 +267,13 @@ class Wagon:
 
 class Purchase:
     def __init__(
-        self, purchase_id, product_name, qunatity, price, created_at=datetime.now(), uploaded_at=datetime.now()
+        self,
+        purchase_id,
+        product_name,
+        qunatity,
+        price,
+        created_at=datetime.now(),
+        uploaded_at=datetime.now(),
     ):
         self.purchase_id = purchase_id
         self.product_name = product_name
@@ -288,17 +294,16 @@ class Purchase:
     def ship_load(self):
         load = self.created_load
         wagon = self.created_wagon
-        self.loads.append(load)
+        self.loads.append(load, wagon)
         return load, wagon
 
     def list_of_loads(self):
+        list_loads = []
         for load in self.loads:
-            load = load
-            print("Load id:", load.load_id)
-            print("Quantity:", load.quantity)
-            print("Status:", load.status)
-            print("Purchase id:", load.purchase_id)
-            print("Wagon ID:", load.wagon_id)
+            wagon = load[1]
+            load = load[0]
+            list_loads.append(f"{load.id};{load.purchase_id};{load.wagon.id};{load.status} - {wagon.wagon_id};{wagon.status};{wagon.type}")
+        return list_loads
 
 
 # 3. Переписать данную функцию, используя генератор функцию, выведите ответ от каждого выражения и напишите коментарий того, что происходит
