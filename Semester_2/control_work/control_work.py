@@ -240,6 +240,8 @@ class Wagon:
         shipping_date,
         location,
         products,
+        updated_at=datetime.now(),
+        created_at=datetime.now()
     ):
         if type.lower() not in ["truck", "ship", "wagon"]:
             raise TypeError
@@ -250,8 +252,8 @@ class Wagon:
         self.shipping_date = shipping_date
         self.location = location
         self.products = products
-        self.updated_at = datetime.now()
-        self.created_at = datetime.now()
+        self.updated_at = updated_at
+        self.created_at = created_at
 
 
 """
@@ -265,14 +267,14 @@ class Wagon:
 
 class Purchase:
     def __init__(
-        self, purchase_id, product_name, qunatity, price, created_at, uploaded_at
+        self, purchase_id, product_name, qunatity, price, created_at=datetime.now(), uploaded_at=datetime.now()
     ):
         self.purchase_id = purchase_id
         self.product_name = product_name
         self.quantity = qunatity
         self.price = price
-        self.created_at = datetime.now()
-        self.uploaded_at = datetime.now()
+        self.created_at = created_at
+        self.uploaded_at = uploaded_at
         self.loads = []
 
     def create_load(self, load_id, quantity, status, purchase_id, wagon_id):
