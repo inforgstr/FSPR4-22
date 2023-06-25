@@ -289,8 +289,8 @@ class Purchase:
         self.loads.append(load)
         return load, wagon
 
-    def list_of_loads(self, loads):
-        for load in loads:
+    def list_of_loads(self):
+        for load in self.loads:
             load = load
             print("Load id:", load.load_id)
             print("Quantity:", load.quantity)
