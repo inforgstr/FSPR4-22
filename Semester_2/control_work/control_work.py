@@ -277,21 +277,21 @@ class Purchase:
 
     def create_load(self, load_id, quantity, status, purchase_id, wagon_id):
         load = Load(load_id, quantity, status, purchase_id, wagon_id)
-        return load
+        self.created_load = load
 
     def attach_wagon(self, wagon_id, type, status, shipping_date, location, products):
         wagon = Wagon(wagon_id, type, status, shipping_date, location, products)
-        return wagon
+        self.created_wagon = wagon
 
-    def ship_load(self, load_id, quantity, status, wagon_id, type, shipping_date, location, products):
-        load = self.create_load(load_id, quantity, status, wagon_id)
-        wagon = self.attach_wagon(wagon_id, type, status, shipping_date, location, products)
-        self.loads.append(load, wagon)
+    def ship_load(self):
+        load = self.created_load
+        wagon = self.created_wagon
+        self.loads.append(load)
         return load, wagon
 
     def list_of_loads(self, loads):
         for load in loads:
-            load = load[0]
+            load = load
             print("Load id:", load.load_id)
             print("Quantity:", load.quantity)
             print("Status:", load.status)
