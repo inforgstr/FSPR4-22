@@ -64,20 +64,25 @@ def get_api_data(soup: BeautifulSoup) -> tuple | Exception:
             ".titleline"
         )  # getting all tags with class called titleline
         points = soup.select(".score")  # getting all tags with class called score
+        score_parents = soup.select(".subtext")
 
-        for point in points:
-            for title in titles_link:
-                if (
-                    point["id"][6:] == title.parent.parent["id"]
-                ):  # If an article point's id is equal to title's id
-                    news_data.append(
-                        {
-                            "title": title.a.text,
-                            "link_to_article": title.a["href"],
-                            "score": int(point.text.split(" ")[0]),
-                        }
-                    )
-                    break
+        for id, title in enumerate(titles_link):
+            if score := score_parents[id].find(class_="score"):
+                news_data.append(
+                    {
+                        "title": title.a.text,
+                        "link_to_article": title.a["href"],
+                        "score": int(score.string.split()[0]),
+                    }
+                )
+            else:
+                news_data.append(
+                    {
+                        "title": title.a.text,
+                        "link_to_article": title.a["href"],
+                        "score": 0,
+                    }
+                )
     except AttributeError as error:
         raise error
 
