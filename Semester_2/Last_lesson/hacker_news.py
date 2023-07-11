@@ -63,7 +63,6 @@ def get_api_data(soup: BeautifulSoup) -> tuple | Exception:
         titles_link = soup.select(
             ".titleline"
         )  # getting all tags with class called titleline
-        points = soup.select(".score")  # getting all tags with class called score
         score_parents = soup.select(".subtext")
 
         for id, title in enumerate(titles_link):
