@@ -1,0 +1,2014 @@
+{
+    "last updated": "2023 year, 07 month, 13 day. At 15:40",
+    "count_pages": 5,
+    "vox-news": [
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "What will stop AI from flooding the internet with fake images?",
+            "article_link": "https://www.vox.com/technology/23746060/ai-generative-fake-images-photoshop-google-microsoft-adobe",
+            "posted_date": "2023 year, 06 month, 03 day, at 11:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Why an Air Force colonel — and many other experts — are so worried about the existential risk of AI",
+            "article_link": "https://www.vox.com/future-perfect/2023/6/2/23745873/artificial-intelligence-existential-risk-air-force-military-robots-autonomous-weapons-openai",
+            "posted_date": "2023 year, 06 month, 02 day, at 11:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Emily Stewart"
+            ],
+            "article_title": "Do we really need an app for everything? ",
+            "article_link": "https://www.vox.com/money/23743915/iphone-android-apps-airline-dentist-pandemic-data-privacy-restaurant",
+            "posted_date": "2023 year, 06 month, 01 day, at 11:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Jennings"
+            ],
+            "article_title": "Should we know where our friends are at all times?  ",
+            "article_link": "https://www.vox.com/culture/23742552/location-sharing-iphone-friends-privacy-risks",
+            "posted_date": "2023 year, 05 month, 31 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Is Apple’s weird headset the future?",
+            "article_link": "https://www.vox.com/technology/2023/5/31/23742675/apple-headset-goggles-vr-ar-mixed-extended-reality-peter-kafka-media-column",
+            "posted_date": "2023 year, 05 month, 31 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Mark Zuckerberg says the hardest part of Meta’s “year of efficiency” is over",
+            "article_link": "https://www.vox.com/technology/2023/5/18/23729176/meta-silicon-valley-massive-layoffs-mark-zuckerberg",
+            "posted_date": "2023 year, 05 month, 25 day, at 22:36",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon Musk tried a big presidential broadcast event and Twitter broke",
+            "article_link": "https://www.vox.com/technology/2023/5/24/23735940/elon-musk-ron-desantis-twitter-tucker-carlson-2024-election",
+            "posted_date": "2023 year, 05 month, 24 day, at 23:53",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Can you safely build something that may kill you?",
+            "article_link": "https://www.vox.com/future-perfect/2023/5/24/23735698/openai-sam-altman-ai-safety-legislation-risks-development-regulation",
+            "posted_date": "2023 year, 05 month, 24 day, at 13:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The Wild West of streaming TV is here and it’s free",
+            "article_link": "https://www.vox.com/technology/2023/5/24/23733401/fast-streaming-tubi-pluto-roku",
+            "posted_date": "2023 year, 05 month, 24 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Li Zhou"
+            ],
+            "article_title": "Montana’s TikTok ban — and the legal challenge of it — explained",
+            "article_link": "https://www.vox.com/politics/2023/5/18/23728598/montana-tiktok-ban-bytedance-china-enforcement",
+            "posted_date": "2023 year, 05 month, 23 day, at 20:04",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "President Biden’s new executive action is all about children and the internet",
+            "article_link": "https://www.vox.com/technology/2023/5/5/23711477/kids-online-safety-act-social-media-pornography",
+            "posted_date": "2023 year, 05 month, 23 day, at 19:45",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Do Americans really want “unbiased” news?",
+            "article_link": "https://www.vox.com/23734303/cnn-the-messenger-unbiased-cable-news",
+            "posted_date": "2023 year, 05 month, 23 day, at 15:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison",
+                "Christian Paz"
+            ],
+            "article_title": "9 questions about the attempts to ban TikTok, answered ",
+            "article_link": "https://www.vox.com/recode/2023/3/2/23622149/tiktok-ban-questions",
+            "posted_date": "2023 year, 05 month, 23 day, at 13:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Gen Z just wants a stable job",
+            "article_link": "https://www.vox.com/technology/2023/5/22/23730295/gen-z-entry-level-jobs-stability-raytheon-lockheed-martin-chevron",
+            "posted_date": "2023 year, 05 month, 22 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon Musk won’t stop tweeting his way into trouble ",
+            "article_link": "https://www.vox.com/technology/2023/5/20/23730607/elon-musk-conspiracy-twitter-texas-shooting-bellingcat-taylor-lorenz-psyops",
+            "posted_date": "2023 year, 05 month, 20 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Instagram’s co-founder explains why he’s starting over",
+            "article_link": "https://www.vox.com/technology/2023/5/19/23727598/kevin-systrom-instagram-artifact-new-app",
+            "posted_date": "2023 year, 05 month, 19 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Ian Millhiser"
+            ],
+            "article_title": "The Supreme Court decides not to break the internet",
+            "article_link": "https://www.vox.com/politics/2023/5/18/23728529/supreme-court-google-twitter-clarence-thomas-isis-taamneh-gonzalez",
+            "posted_date": "2023 year, 05 month, 18 day, at 18:31",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Emily Stewart"
+            ],
+            "article_title": "Crypto is the same fraud, different package",
+            "article_link": "https://www.vox.com/the-highlight/23678646/crypto-ftx-bitcoin-fraud-scams-capitalism-ethereum-sbf",
+            "posted_date": "2023 year, 05 month, 18 day, at 10:26",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Our new AI overlord just charmed Congress",
+            "article_link": "https://www.vox.com/technology/2023/5/11/23717408/ai-dc-laws-congress-google-microsoft",
+            "posted_date": "2023 year, 05 month, 16 day, at 18:11",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Microsoft’s big video game merger just got an extra life",
+            "article_link": "https://www.vox.com/technology/2023/4/27/23699227/microsoft-activision-blizzard-antitrust-nope",
+            "posted_date": "2023 year, 05 month, 15 day, at 21:19",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Who is Linda Yaccarino, Elon Musk’s pick for new Twitter CEO?  ",
+            "article_link": "https://www.vox.com/technology/2023/5/11/23720327/elon-musk-new-twitter-ceo-linda-yaccarino",
+            "posted_date": "2023 year, 05 month, 12 day, at 16:04",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Why Google is reinventing the internet search",
+            "article_link": "https://www.vox.com/recode/2023/3/4/23624033/openai-bing-bard-microsoft-generative-ai-explained",
+            "posted_date": "2023 year, 05 month, 11 day, at 21:14",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Tucker Carlson’s TV-to-Twitter move could actually pay off",
+            "article_link": "https://www.vox.com/technology/2023/5/11/23719032/tucker-carlson-twitter-elon-musk-math-advertising-subscriptions-peter-kafka-media-column",
+            "posted_date": "2023 year, 05 month, 11 day, at 10:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Google is putting AI in basically everything, including search ",
+            "article_link": "https://www.vox.com/technology/2023/5/10/23718877/google-io-sundar-pichai-ai-conference-palm2-sge-mountain-view-openai-microsoft-generative",
+            "posted_date": "2023 year, 05 month, 10 day, at 21:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison",
+                "Aja Romano"
+            ],
+            "article_title": "Tucker Carlson’s show is back, and it’s on Twitter",
+            "article_link": "https://www.vox.com/technology/2023/4/24/23696065/twitter-tucker-carlson-elon-musk-fox-news-fired",
+            "posted_date": "2023 year, 05 month, 10 day, at 14:21",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Don’t let AI fears of the future overshadow present-day causes",
+            "article_link": "https://www.vox.com/future-perfect/2023/5/10/23717878/artificial-intelligence-global-health-malaria-global-poverty",
+            "posted_date": "2023 year, 05 month, 10 day, at 13:10",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Mark Zuckerberg’s not-so-secret plan to join the AI race",
+            "article_link": "https://www.vox.com/technology/2023/5/9/23715798/meta-ai-facebook-instagram-whatsapp",
+            "posted_date": "2023 year, 05 month, 09 day, at 15:55",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "Why most car dealers still don’t have any electric vehicles",
+            "article_link": "https://www.vox.com/technology/23713040/ev-car-dealer-dealership-electric-sales-gm-ford-tesla-rivian",
+            "posted_date": "2023 year, 05 month, 08 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "Please don’t turn to ChatGPT for moral advice. Yet. ",
+            "article_link": "https://www.vox.com/future-perfect/2023/5/7/23708169/ask-ai-chatgpt-ethical-advice-moral-enhancement",
+            "posted_date": "2023 year, 05 month, 07 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "The promise and peril of AI, according to 5 experts",
+            "article_link": "https://www.vox.com/technology/2023/5/6/23713017/ai-chatgpt-microsoft-google-5-questions-experts",
+            "posted_date": "2023 year, 05 month, 06 day, at 11:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "You may never eat inside a fast food restaurant again",
+            "article_link": "https://www.vox.com/food/23711010/fast-food-dining-delivery-automation",
+            "posted_date": "2023 year, 05 month, 05 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Your boss is obsessed with productivity without knowing what it means ",
+            "article_link": "https://www.vox.com/technology/23710261/productivity-definition-measures-remote-work-management",
+            "posted_date": "2023 year, 05 month, 05 day, at 10:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "Mind-reading technology has arrived",
+            "article_link": "https://www.vox.com/future-perfect/2023/5/4/23708162/neurotechnology-mind-reading-brain-neuralink-brain-computer-interface",
+            "posted_date": "2023 year, 05 month, 04 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Phil Edwards"
+            ],
+            "article_title": "An AI artist explains his workflow",
+            "article_link": "https://www.vox.com/videos/2023/5/2/23708076/ai-artist-stelfie-process-workflow",
+            "posted_date": "2023 year, 05 month, 02 day, at 19:40",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Why digital media is melting down",
+            "article_link": "https://www.vox.com/technology/23707208/nick-denton-jonah-peretti-ben-smith-buzzfeed-gawker-book-traffic-podcast-peter-kafka-recode-media",
+            "posted_date": "2023 year, 05 month, 02 day, at 14:12",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "Smaller, cheaper, safer: The next generation of nuclear power, explained  ",
+            "article_link": "https://www.vox.com/science/23702686/nuclear-power-small-modular-reactor-energy-climate-change",
+            "posted_date": "2023 year, 05 month, 01 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jonathan Guyer"
+            ],
+            "article_title": "How Saudi money returned to Silicon Valley",
+            "article_link": "https://www.vox.com/technology/2023/5/1/23702451/silicon-valley-saudi-money-khashoggi",
+            "posted_date": "2023 year, 05 month, 01 day, at 09:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "What is Bluesky, and why is everyone on Twitter talking about it?",
+            "article_link": "https://www.vox.com/technology/2023/4/29/23702979/bluesky-twitter-elon-musk-jack-dorsey-chrissy-teigen-aoc-dril-decentralized",
+            "posted_date": "2023 year, 04 month, 29 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "An Amazon union just won a $30 an hour contract",
+            "article_link": "https://www.vox.com/technology/2023/4/27/23667968/amazon-contractor-delivery-union-teamsters",
+            "posted_date": "2023 year, 04 month, 28 day, at 20:46",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "What could actually kill us all?",
+            "article_link": "https://www.vox.com/future-perfect/2023/4/27/23699511/existential-risk-ai-nuclear-war-climate",
+            "posted_date": "2023 year, 04 month, 27 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "What gets lost in the AI debate: It can be really fun",
+            "article_link": "https://www.vox.com/technology/2023/4/27/23699541/ai-fun-artificial-intelligence-drake-the-weeknd",
+            "posted_date": "2023 year, 04 month, 27 day, at 11:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "No, seriously, why did Fox News fire Tucker Carlson?",
+            "article_link": "https://www.vox.com/technology/2023/4/25/23698083/tucker-carlson-fired-theory-fox-news-peter-kafka-media-column",
+            "posted_date": "2023 year, 04 month, 26 day, at 16:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The problem with Apple’s big banking push",
+            "article_link": "https://www.vox.com/technology/2023/4/26/23698215/apple-iphone-banking-card-savings-pay-later",
+            "posted_date": "2023 year, 04 month, 26 day, at 10:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Twitter’s old blue checks are finally gone",
+            "article_link": "https://www.vox.com/recode/2022/11/4/23438917/twitter-verifications-blue-check-elon-musk",
+            "posted_date": "2023 year, 04 month, 25 day, at 21:17",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Phil Edwards"
+            ],
+            "article_title": "How TikTok dances trained an AI to see",
+            "article_link": "https://www.vox.com/videos/2023/4/25/23698059/tiktok-ai-depth-estimation-mannequin-challenge",
+            "posted_date": "2023 year, 04 month, 25 day, at 20:29",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon’s blue check disaster is getting worse",
+            "article_link": "https://www.vox.com/technology/2023/4/25/23697830/elon-musk-twitter-checkmark-removal-blue-kara-swisher-lebron-james-doja-cat",
+            "posted_date": "2023 year, 04 month, 25 day, at 19:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Li Zhou"
+            ],
+            "article_title": "Why SpaceX doesn’t see its rocket explosion as a failure",
+            "article_link": "https://www.vox.com/2023/4/21/23692946/spacex-starship-rocket-explosion-launch",
+            "posted_date": "2023 year, 04 month, 21 day, at 18:20",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Tech companies are finally firing tech workers ",
+            "article_link": "https://www.vox.com/technology/2023/4/21/23692515/tech-workers-software-engineers-layoffs-meta-coding",
+            "posted_date": "2023 year, 04 month, 21 day, at 14:43",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "When did mass layoffs become so normal?",
+            "article_link": "https://www.vox.com/money/23691406/layoffs-history-job-insecurity-corporate-downsizing-q-a",
+            "posted_date": "2023 year, 04 month, 21 day, at 10:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "In a leaked Q&A, Mark Zuckerberg tells employees “we’re in a different world”",
+            "article_link": "https://www.vox.com/technology/2023/4/20/23692002/meta-layoffs-leaked-mark-zuckerberg-facebook",
+            "posted_date": "2023 year, 04 month, 20 day, at 23:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": " RIP, BuzzFeed News. Who’s next?",
+            "article_link": "https://www.vox.com/technology/2023/4/20/23691852/buzzfeed-news-rip-digital-media-industry",
+            "posted_date": "2023 year, 04 month, 20 day, at 22:05",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Americans think AI is someone else’s problem        ",
+            "article_link": "https://www.vox.com/technology/2023/4/20/23689451/artificial-intelligence-ai-work-pew-survey",
+            "posted_date": "2023 year, 04 month, 20 day, at 14:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Meta’s lingering layoffs enter their next phase",
+            "article_link": "https://www.vox.com/technology/2023/4/18/23688627/meta-layoffs-mark-zuckerberg-facebook-instagram-whatsapp",
+            "posted_date": "2023 year, 04 month, 19 day, at 22:20",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Fox News won. Dominion won. The rest of us lost.",
+            "article_link": "https://www.vox.com/technology/2023/4/19/23689909/fox-news-dominion-lawsuit-settlement-peter-kafka-media-column",
+            "posted_date": "2023 year, 04 month, 19 day, at 18:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "What we know about Elon Musk’s plan to turn Twitter into a super app",
+            "article_link": "https://www.vox.com/technology/2023/4/18/23687125/elon-musk-twitter-x-super-app-wechat",
+            "posted_date": "2023 year, 04 month, 18 day, at 21:59",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Phil Edwards"
+            ],
+            "article_title": "Can AI kill the greenscreen?",
+            "article_link": "https://www.vox.com/videos/2023/4/18/23688459/ai-greenscreen-vfx-background-separation",
+            "posted_date": "2023 year, 04 month, 18 day, at 20:04",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Is Twitter finally dying?",
+            "article_link": "https://www.vox.com/technology/2023/4/15/23683554/twitter-dying-elon-musk-x-company",
+            "posted_date": "2023 year, 04 month, 15 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "Finally, a realistic roadmap for getting AI companies in check",
+            "article_link": "https://www.vox.com/future-perfect/2023/4/12/23677917/ai-artificial-intelligence-regulation-big-tech-microsoft-openai",
+            "posted_date": "2023 year, 04 month, 12 day, at 18:20",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "The EPA’s new plan to cut car pollution has an SUV problem",
+            "article_link": "https://www.vox.com/climate/23680273/epa-emissions-rule-electric-vehicles-ev-pollution-climate-regulation-fuel-economy",
+            "posted_date": "2023 year, 04 month, 12 day, at 16:40",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Jennings"
+            ],
+            "article_title": "Can AI create a convincing Wes Anderson film? (Not really!)",
+            "article_link": "https://www.vox.com/culture/23678708/ai-art-balenciaga-harry-potter-midjourney-eleven-labs",
+            "posted_date": "2023 year, 04 month, 12 day, at 12:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Microsoft’s current AI dominance is thrilling the company’s diehard fans",
+            "article_link": "https://www.vox.com/technology/2023/4/12/23679146/microsoft-openai-fans",
+            "posted_date": "2023 year, 04 month, 12 day, at 10:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "AI is flooding the workplace, and workers love it",
+            "article_link": "https://www.vox.com/technology/23673018/generative-ai-chatgpt-bing-bard-work-jobs",
+            "posted_date": "2023 year, 04 month, 10 day, at 12:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "What happens when ChatGPT starts to feed on its own writing?",
+            "article_link": "https://www.vox.com/future-perfect/23674696/chatgpt-ai-creativity-originality-homogenization",
+            "posted_date": "2023 year, 04 month, 10 day, at 10:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Tesla’s cameras are reportedly spying on customers, but it’s not just a Tesla problem",
+            "article_link": "https://www.vox.com/technology/2023/4/6/23673339/tesla-camera-privacy",
+            "posted_date": "2023 year, 04 month, 06 day, at 23:25",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Emily Stewart"
+            ],
+            "article_title": "Your phone is ruining your vacation",
+            "article_link": "https://www.vox.com/money/23662213/smartphone-instagram-vacation-pictures-distract-holidays",
+            "posted_date": "2023 year, 04 month, 06 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Why we’re scared of AI and not scared enough of bio risks",
+            "article_link": "https://www.vox.com/future-perfect/23671304/artificial-intelligence-biotechnology-covid-pandemics-existential-risks-gain-of-function",
+            "posted_date": "2023 year, 04 month, 06 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Trump is no longer the social media king",
+            "article_link": "https://www.vox.com/technology/2023/4/5/23671478/donald-trump-arrest-twitter-arraignment-social-media",
+            "posted_date": "2023 year, 04 month, 05 day, at 20:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Phil Edwards"
+            ],
+            "article_title": "Why AI art struggles with hands",
+            "article_link": "https://www.vox.com/videos/2023/4/4/23669625/ai-data-learning-hands-difficulty-patterns",
+            "posted_date": "2023 year, 04 month, 04 day, at 20:04",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Why your Twitter page is changing and may have a dog on it",
+            "article_link": "https://www.vox.com/technology/2023/3/31/23664041/elon-musk-twitter-checkmark-pay-play-subscription-blue-doge-dog-dogecoin-shiba-logo",
+            "posted_date": "2023 year, 04 month, 03 day, at 22:33",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "Humanity’s return to the moon is a deeply religious mission",
+            "article_link": "https://www.vox.com/future-perfect/2023/4/3/23667361/moon-artemis-nasa-elon-musk-jeff-bezos-space-colonization-exploration",
+            "posted_date": "2023 year, 04 month, 03 day, at 18:36",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Why all your friends are sending you voice notes",
+            "article_link": "https://www.vox.com/technology/23665101/voice-message-whatsapp-apple-text",
+            "posted_date": "2023 year, 04 month, 03 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Bryan Walsh"
+            ],
+            "article_title": "How the relentless drive for optimization made baseball impossible to watch",
+            "article_link": "https://www.vox.com/future-perfect/2023/4/1/23664724/baseball-artificial-intelligence-kyle-schwarber-philadelphia-phillies-moneyball-strikeout-homer",
+            "posted_date": "2023 year, 04 month, 01 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Oshan Jarow"
+            ],
+            "article_title": "How fake AI images can expand your mind",
+            "article_link": "https://www.vox.com/future-perfect/23661673/pope-puffer-coat-generative-ai-midjourney-imagination",
+            "posted_date": "2023 year, 03 month, 30 day, at 14:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "How unbelievably realistic fake images could take over the internet",
+            "article_link": "https://www.vox.com/technology/2023/3/30/23662292/ai-image-dalle-openai-midjourney-pope-jacket",
+            "posted_date": "2023 year, 03 month, 30 day, at 10:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Starbucks won’t admit to breaking the law by union busting",
+            "article_link": "https://www.vox.com/technology/2023/3/28/23659846/starbucks-ceo-howard-schultz-senate-union-busting",
+            "posted_date": "2023 year, 03 month, 29 day, at 23:07",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "How to test what an AI model can — and shouldn’t — do",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/29/23661633/gpt-4-openai-alignment-research-center-open-philanthropy-ai-safety",
+            "posted_date": "2023 year, 03 month, 29 day, at 16:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The RESTRICT Act is more bad news for TikTok",
+            "article_link": "https://www.vox.com/technology/2023/3/7/23628147/tiktok-ban-restrict-act-bill-warner-thune",
+            "posted_date": "2023 year, 03 month, 29 day, at 15:42",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "AI leaders (and Elon Musk) urge all labs to press pause on powerful AI",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/29/23660833/ai-pause-musk-artificial-intelligence-moratorium-chatgpt-gpt4",
+            "posted_date": "2023 year, 03 month, 29 day, at 14:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Rebecca Jennings"
+            ],
+            "article_title": "Has TikTok made us better? Or much, much worse?  ",
+            "article_link": "https://www.vox.com/culture/23660355/tiktok-ban-cultural-impact",
+            "posted_date": "2023 year, 03 month, 29 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Emily Stewart",
+                "Peter Kafka"
+            ],
+            "article_title": "9 questions about Silicon Valley Bank’s collapse, answered",
+            "article_link": "https://www.vox.com/technology/23634433/silicon-valley-bank-collapse-silvergate-first-republic-fdic",
+            "posted_date": "2023 year, 03 month, 28 day, at 14:17",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Utah’s social media for kids law could be coming to a state near you",
+            "article_link": "https://www.vox.com/technology/2023/3/25/23655549/utah-social-media-law-children-facebook-instagram-tiktok-snapchat",
+            "posted_date": "2023 year, 03 month, 25 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Haydn Belfield"
+            ],
+            "article_title": "If your AI model is going to sell, it has to be safe ",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/25/23655082/ai-openai-gpt-4-safety-microsoft-facebook-meta",
+            "posted_date": "2023 year, 03 month, 25 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Anna North"
+            ],
+            "article_title": "The “You’re doing it wrong”-ification of TikTok",
+            "article_link": "https://www.vox.com/culture/23648715/tiktok-instagram-advice-mistakes-howto-tutorial",
+            "posted_date": "2023 year, 03 month, 24 day, at 15:54",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Why advertisers aren’t coming back to Twitter",
+            "article_link": "https://www.vox.com/technology/2023/3/23/23651151/twitter-advertisers-elon-musk-brands-revenue-fleeing",
+            "posted_date": "2023 year, 03 month, 24 day, at 15:05",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "It’s still possible to get what you want at work",
+            "article_link": "https://www.vox.com/technology/23649895/worker-power-bosses-recession-layoffs-quits",
+            "posted_date": "2023 year, 03 month, 24 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison",
+                "Christian Paz"
+            ],
+            "article_title": "3 winners and 3 losers from Congress’s TikTok hearing",
+            "article_link": "https://www.vox.com/technology/23653884/tiktok-hearing-shou-chew-winners-losers",
+            "posted_date": "2023 year, 03 month, 23 day, at 21:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kenny Torrella"
+            ],
+            "article_title": "How will we feed Earth’s rising population? Ask the Dutch.",
+            "article_link": "https://www.vox.com/the-highlight/23627509/netherlands-dairy-cow-protests-seeds-farming-agriculture-climate",
+            "posted_date": "2023 year, 03 month, 23 day, at 11:55",
+            "topic_title": "The Highlight",
+            "topic_link": "https://www.vox.com/the-highlight"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The era of impossible subscription cancellations is nearing an end ",
+            "article_link": "https://www.vox.com/technology/2023/3/23/23652253/ftc-lina-khan-subscription-click-to-cancel",
+            "posted_date": "2023 year, 03 month, 23 day, at 10:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Google’s new AI chatbot seems boring. Maybe that’s the point.",
+            "article_link": "https://www.vox.com/technology/2023/3/22/23651093/google-bard-ai-chatbot-microsoft-chat-gpt-generative",
+            "posted_date": "2023 year, 03 month, 22 day, at 14:13",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Dylan Matthews"
+            ],
+            "article_title": "Why the news is so negative — and what we can do about it",
+            "article_link": "https://www.vox.com/the-highlight/23596969/bad-news-negativity-bias-media",
+            "posted_date": "2023 year, 03 month, 22 day, at 11:52",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Is TikTok too big to ban?",
+            "article_link": "https://www.vox.com/technology/2023/3/21/23645362/tiktok-shou-zi-chew-congress-ban",
+            "posted_date": "2023 year, 03 month, 21 day, at 15:15",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Hannah Ritchie"
+            ],
+            "article_title": "We need the right kind of climate optimism",
+            "article_link": "https://www.vox.com/the-highlight/23622511/climate-doomerism-optimism-progress-environmentalism",
+            "posted_date": "2023 year, 03 month, 21 day, at 11:53",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "The case for slowing down AI",
+            "article_link": "https://www.vox.com/the-highlight/23621198/artificial-intelligence-chatgpt-openai-existential-risk-china-ai-safety-technology",
+            "posted_date": "2023 year, 03 month, 20 day, at 11:58",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Can society adjust at the speed of artificial intelligence? ",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/18/23645013/openai-gpt4-holden-karnofsky-artificial-intelligence-ai-safety-existential-risk",
+            "posted_date": "2023 year, 03 month, 18 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sigal Samuel"
+            ],
+            "article_title": "Your brain may not be private much longer ",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/17/23638325/neurotechnology-ethics-neurofeedback-brain-stimulation-nita-farahany",
+            "posted_date": "2023 year, 03 month, 17 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary",
+                "Rani Molla"
+            ],
+            "article_title": "Will using AI make Microsoft Word better? We’re going to find out.",
+            "article_link": "https://www.vox.com/technology/2023/3/16/23643806/ai-microsoft-word-powerpoint-office-google-artificial-intelligence-chatgpt-automation-jobs-work",
+            "posted_date": "2023 year, 03 month, 16 day, at 21:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Layoffs are bad for business ",
+            "article_link": "https://www.vox.com/technology/2023/3/16/23642978/facebook-meta-layoffs-bad",
+            "posted_date": "2023 year, 03 month, 16 day, at 17:15",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "What happens to Silicon Valley without Silicon Valley Bank?",
+            "article_link": "https://www.vox.com/technology/2023/3/16/23641641/silicon-valley-bank-failure-history",
+            "posted_date": "2023 year, 03 month, 16 day, at 10:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "The makers of ChatGPT just released a new AI that can build websites, among other things",
+            "article_link": "https://www.vox.com/2023/3/15/23640640/gpt-4-chatgpt-openai-generative-ai",
+            "posted_date": "2023 year, 03 month, 15 day, at 13:20",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Jennings"
+            ],
+            "article_title": "What YouTube hustle gurus are really selling you",
+            "article_link": "https://www.vox.com/culture/23640192/sebastian-ghiorghiu-youtube-hustle-gurus-passive-income-dropshipping",
+            "posted_date": "2023 year, 03 month, 15 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla",
+                "Peter Kafka"
+            ],
+            "article_title": "Are Elon’s Tweets turning car buyers against Tesla?",
+            "article_link": "https://www.vox.com/technology/2023/3/15/23637996/elon-musk-tesla-twitter-tweets-consumer-survey-yougov-peter-kafka-column",
+            "posted_date": "2023 year, 03 month, 15 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Dylan Matthews"
+            ],
+            "article_title": "If you’re not using ChatGPT for your writing, you’re probably making a mistake",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/14/23637633/chatgpt-bing-generative-ai-ethan-lilach-mollick",
+            "posted_date": "2023 year, 03 month, 14 day, at 11:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Nicole Narea"
+            ],
+            "article_title": "Trump-era banking law paved way for Silicon Valley Bank’s collapse",
+            "article_link": "https://www.vox.com/business-and-finance/2023/3/13/23638655/silicon-valley-bank-trump-fdic-banking-law",
+            "posted_date": "2023 year, 03 month, 13 day, at 23:05",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Emily Stewart"
+            ],
+            "article_title": "Is this a bailout?",
+            "article_link": "https://www.vox.com/money/2023/3/13/23638417/svb-bank-bailout-signature-fed-fdic-treasury-janet-yellen",
+            "posted_date": "2023 year, 03 month, 13 day, at 21:20",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [],
+            "article_title": "The swift collapse of Silicon Valley Bank, explained",
+            "article_link": "https://www.vox.com/2023/3/13/23637862/silicon-valley-bank-collapse-what-happened-updates-latest-news",
+            "posted_date": "2023 year, 03 month, 13 day, at 17:59",
+            "topic_title": null,
+            "topic_link": "https://www.vox.com/2023/3/13/23637862/silicon-valley-bank-collapse-what-happened-updates-latest-news"
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Maybe AI can finally kill the cover letter",
+            "article_link": "https://www.vox.com/technology/2023/3/8/23618509/chatgpt-generative-ai-cover-letter",
+            "posted_date": "2023 year, 03 month, 08 day, at 11:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Haydn Belfield"
+            ],
+            "article_title": "There’s no libertarian approach to preventing the end of the world ",
+            "article_link": "https://www.vox.com/future-perfect/2023/3/7/23618766/peter-thiel-existential-risk-oxford-union-silicon-valley-technology-artficial-intelligence",
+            "posted_date": "2023 year, 03 month, 07 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Musk’s Twitter is getting worse",
+            "article_link": "https://www.vox.com/technology/2023/2/16/23603155/elon-musk-twitter-worse-degrading-quality-glitches-superbowl-boost-feed",
+            "posted_date": "2023 year, 03 month, 06 day, at 18:25",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Snow Crash author Neal Stephenson predicted the metaverse. What does he see next?",
+            "article_link": "https://www.vox.com/technology/2023/3/6/23627351/neal-stephenson-snow-crash-metaverse-goggles-movies-games-tv-podcast-peter-kafka-media-column",
+            "posted_date": "2023 year, 03 month, 06 day, at 18:20",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Adam Clark Estes"
+            ],
+            "article_title": "A new era of technology coverage on Vox",
+            "article_link": "https://www.vox.com/technology/23624034/vox-technology-recode",
+            "posted_date": "2023 year, 03 month, 06 day, at 15:22",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Silicon Valley’s AI frenzy isn’t just another crypto craze",
+            "article_link": "https://www.vox.com/technology/2023/3/6/23624015/silicon-valley-generative-ai-chat-gpt-crypto-hype-trend",
+            "posted_date": "2023 year, 03 month, 06 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Oshan Jarow"
+            ],
+            "article_title": "How the first chatbot predicted the dangers of AI more than 50 years ago",
+            "article_link": "https://www.vox.com/future-perfect/23617185/ai-chatbots-eliza-chatgpt-bing-sydney-artificial-intelligence-history",
+            "posted_date": "2023 year, 03 month, 05 day, at 11:01",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Gary Marcus"
+            ],
+            "article_title": "Elon Musk thinks we’re close to solving AI. That doesn’t make it true.",
+            "article_link": "https://www.vox.com/future-perfect/23622120/elon-musk-solve-ai-chatgpt-wrong",
+            "posted_date": "2023 year, 03 month, 03 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "TikTok isn’t really limiting kids’ time on its app",
+            "article_link": "https://www.vox.com/recode/2023/3/2/23620393/tiktok-screen-time-limit-parents-ban",
+            "posted_date": "2023 year, 03 month, 02 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "OpenAI wants to build systems smarter than us",
+            "article_link": "https://www.vox.com/future-perfect/23619354/openai-chatgpt-sam-altman-artificial-intelligence-regulation-sydney-microsoft-ai-safety",
+            "posted_date": "2023 year, 03 month, 01 day, at 16:35",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Section 230, the internet law the Supreme Court could change, explained",
+            "article_link": "https://www.vox.com/recode/2020/5/28/21273241/section-230-explained-supreme-court-social-media",
+            "posted_date": "2023 year, 02 month, 23 day, at 20:07",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Ian Millhiser"
+            ],
+            "article_title": "The Supreme Court is befuddled by whether Twitter is liable for ISIS’s terrorism",
+            "article_link": "https://www.vox.com/politics/2023/2/22/23610608/supreme-court-twitter-taamneh-isis-terrorism-section-230-justice",
+            "posted_date": "2023 year, 02 month, 22 day, at 20:43",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sean Illing"
+            ],
+            "article_title": "How Palo Alto created capitalism as we know it",
+            "article_link": "https://www.vox.com/podcasts/23604908/malcolm-harris-palo-alto-capitalism-interview",
+            "posted_date": "2023 year, 02 month, 22 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Social media used to be free. Not anymore.",
+            "article_link": "https://www.vox.com/recode/2023/2/21/23609375/meta-verified-twitter-blue-checkmark-badge-instagram-facebook",
+            "posted_date": "2023 year, 02 month, 21 day, at 22:55",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Ian Millhiser"
+            ],
+            "article_title": "The Supreme Court appears worried it could break the internet",
+            "article_link": "https://www.vox.com/politics/2023/2/21/23608851/supreme-court-gonzalez-google-section-230-internet-twitter-facebook",
+            "posted_date": "2023 year, 02 month, 21 day, at 20:28",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Stop using your phone number to log in",
+            "article_link": "https://www.vox.com/recode/23604327/whatsapp-phone-number-recycle-privacy-security-risks",
+            "posted_date": "2023 year, 02 month, 21 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "YouTube CEO Susan Wojcicki is stepping down",
+            "article_link": "https://www.vox.com/recode/2023/2/16/23602636/youtube-ceo-susan-wojcicki-leaving-neal-mohan",
+            "posted_date": "2023 year, 02 month, 16 day, at 17:02",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Ian Millhiser"
+            ],
+            "article_title": "The Supreme Court hears two cases that could ruin the internet",
+            "article_link": "https://www.vox.com/policy-and-politics/2023/2/16/23582848/supreme-court-internet-section-230-terrorism-cases-gonzalez-google-twitter-taamneh",
+            "posted_date": "2023 year, 02 month, 16 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The new Congress is enlisting kids in its ongoing fight with Big Tech",
+            "article_link": "https://www.vox.com/recode/2023/2/15/23599879/congress-children-safety-online-big-tech",
+            "posted_date": "2023 year, 02 month, 15 day, at 11:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Leaked memo: Meta executive warns employees they’re still “at the whim of Apple”  ",
+            "article_link": "https://www.vox.com/recode/2023/2/15/23599734/meta-facebook-stock-apple-competition-tiktok-mark-zuckerberg-alex-schultz",
+            "posted_date": "2023 year, 02 month, 15 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jonathan Guyer"
+            ],
+            "article_title": "Why the balloon and UFO affairs are a Sputnik moment",
+            "article_link": "https://www.vox.com/world/2023/2/7/23588464/suspect-spy-china-balloon-sputnik-moment-space-race",
+            "posted_date": "2023 year, 02 month, 13 day, at 15:14",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The forgotten victims of the Adderall shortage",
+            "article_link": "https://www.vox.com/recode/2023/2/10/23593261/adderall-concerta-ritalin-shortage-adhd-narcolepsy",
+            "posted_date": "2023 year, 02 month, 10 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "The case for better-seats-cost-more movie tickets",
+            "article_link": "https://www.vox.com/recode/2023/2/10/23593428/amc-movie-ticket-prices-sightline-variable-peter-kafka-column",
+            "posted_date": "2023 year, 02 month, 10 day, at 12:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary",
+                "Rani Molla"
+            ],
+            "article_title": "Layoffs are making LinkedIn the new hot social network ",
+            "article_link": "https://www.vox.com/recode/2023/2/10/23591790/layoffs-linkedin-tech-media-social-network",
+            "posted_date": "2023 year, 02 month, 10 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "It’s official. Trump is back on Facebook and Instagram.",
+            "article_link": "https://www.vox.com/recode/2023/1/25/23570224/trump-return-facebook-account-ban-suspension-lifted-mark-zuckerberg-nick-clegg",
+            "posted_date": "2023 year, 02 month, 09 day, at 21:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "It doesn’t take that many electric cars to improve public health ",
+            "article_link": "https://www.vox.com/energy-and-environment/23583500/ev-electric-car-california-air-pollution-asthma-health",
+            "posted_date": "2023 year, 02 month, 09 day, at 19:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [],
+            "article_title": "Silicon Valley’s vibe shift",
+            "article_link": "https://www.vox.com/recode/2023/2/9/23583264/tech-layoffs-silicon-valley-vibe-shift",
+            "posted_date": "2023 year, 02 month, 09 day, at 16:52",
+            "topic_title": null,
+            "topic_link": "https://www.vox.com/recode/2023/2/9/23583264/tech-layoffs-silicon-valley-vibe-shift"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Last year’s Super Bowl ads aged like milk",
+            "article_link": "https://www.vox.com/recode/2023/2/9/23591622/super-bowl-commercials-lvii-crypto-ads",
+            "posted_date": "2023 year, 02 month, 09 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Bosses want to pay you more but give you less",
+            "article_link": "https://www.vox.com/recode/2023/2/9/23591549/tech-freelance-contract-independent-work-layoffs",
+            "posted_date": "2023 year, 02 month, 09 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kelsey Piper"
+            ],
+            "article_title": "Are we racing toward AI catastrophe?",
+            "article_link": "https://www.vox.com/future-perfect/23591534/chatgpt-artificial-intelligence-google-baidu-microsoft-openai",
+            "posted_date": "2023 year, 02 month, 09 day, at 10:30",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Google is scrambling to catch up to Bing, of all things",
+            "article_link": "https://www.vox.com/recode/2023/2/7/23590069/bing-openai-microsoft-google-bard",
+            "posted_date": "2023 year, 02 month, 09 day, at 00:17",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison",
+                "Rani Molla"
+            ],
+            "article_title": "What banning noncompetes could mean for the US workforce",
+            "article_link": "https://www.vox.com/recode/2023/1/5/23540951/noncompete-agreements-ban-biden",
+            "posted_date": "2023 year, 02 month, 08 day, at 04:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Here comes Bard, Google’s version of ChatGPT",
+            "article_link": "https://www.vox.com/recode/2023/2/6/23588308/google-bard-chatbot-chatgpt-ai-testing-public",
+            "posted_date": "2023 year, 02 month, 06 day, at 21:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "The trials of Elon Musk",
+            "article_link": "https://www.vox.com/the-goods/23585251/elon-musk-tesla-trial-verdict",
+            "posted_date": "2023 year, 02 month, 04 day, at 01:02",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "The AI boom is here, and so are the lawsuits",
+            "article_link": "https://www.vox.com/recode/23580554/generative-ai-chatgpt-openai-stable-diffusion-legal-battles-napster-copyright-peter-kafka-column",
+            "posted_date": "2023 year, 02 month, 02 day, at 23:04",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "TikTok’s master plan to win over Washington",
+            "article_link": "https://www.vox.com/recode/2023/1/17/23552716/tiktok-ban-cfius-bytedance",
+            "posted_date": "2023 year, 02 month, 02 day, at 16:27",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Behind the scenes at TikTok as it campaigns to change Americans’ hearts and minds",
+            "article_link": "https://www.vox.com/recode/2023/2/2/23582202/tiktok-headquarters-press-accountability-ban-trump",
+            "posted_date": "2023 year, 02 month, 02 day, at 14:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "GoodRx made money off your health data. The FTC is making it pay.",
+            "article_link": "https://www.vox.com/recode/23581260/goodrx-ftc-privacy",
+            "posted_date": "2023 year, 02 month, 01 day, at 17:13",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Where will all the laid-off tech workers go?",
+            "article_link": "https://www.vox.com/recode/2023/1/31/23579841/tech-worker-layoffs-industry-startups",
+            "posted_date": "2023 year, 01 month, 31 day, at 18:40",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla",
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Your favorite tech giant wants you to know it’s a startup again",
+            "article_link": "https://www.vox.com/recode/23573432/tech-layoffs-cuts-startup-facebook-google-amazon",
+            "posted_date": "2023 year, 01 month, 30 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "What does it mean to give away a $118 billion fortune?",
+            "article_link": "https://www.vox.com/recode/23553730/jeff-bezos-philanthropy-giving-pledge-charity",
+            "posted_date": "2023 year, 01 month, 27 day, at 20:09",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "Why Teslas keep catching on fire ",
+            "article_link": "https://www.vox.com/the-highlight/2023/1/17/23470878/tesla-fires-evs-florida-hurricane-batteries-lithium-ion",
+            "posted_date": "2023 year, 01 month, 27 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Microsoft is beating Google at its own game",
+            "article_link": "https://www.vox.com/recode/2023/1/26/23571710/microsoft-open-ai-chatgpt-google",
+            "posted_date": "2023 year, 01 month, 26 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Google’s bad year is getting worse",
+            "article_link": "https://www.vox.com/recode/2023/1/24/23569609/google-antitrust-lawsuit-digital-ads",
+            "posted_date": "2023 year, 01 month, 24 day, at 21:45",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "What Microsoft gets from betting billions on the maker of ChatGPT",
+            "article_link": "https://www.vox.com/recode/2023/1/23/23567991/microsoft-open-ai-investment-chatgpt",
+            "posted_date": "2023 year, 01 month, 23 day, at 20:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Netflix now has two CEOs, and neither is founder Reed Hastings",
+            "article_link": "https://www.vox.com/recode/2023/1/19/23563159/netflix-reed-hastings-greg-peters-ted-sarandos",
+            "posted_date": "2023 year, 01 month, 20 day, at 00:05",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jason Del Rey"
+            ],
+            "article_title": "Inside the battle for the future of Amazon ",
+            "article_link": "https://www.vox.com/recode/2023/1/19/23562702/amazon-layoffs-andy-jassy-day-2-alexa",
+            "posted_date": "2023 year, 01 month, 19 day, at 22:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "The FAA is struggling. Who can save it?",
+            "article_link": "https://www.vox.com/recode/2023/1/19/23561531/faa-outage-notam-alerts-pilots-crews-delays-cancellations-biden-buttigieg",
+            "posted_date": "2023 year, 01 month, 19 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "It looks like people are actually moving back to San Francisco (really)",
+            "article_link": "https://www.vox.com/recode/2023/1/18/23542444/san-francisco-bay-area-population-moving-linkedin",
+            "posted_date": "2023 year, 01 month, 18 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Are we too worried about misinformation?   ",
+            "article_link": "https://www.vox.com/recode/2023/1/16/23553802/misinformation-twitter-facebook-alex-stamos-peter-kafka-media-column",
+            "posted_date": "2023 year, 01 month, 16 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Quiet hiring and the endless quest to coin terms about work ",
+            "article_link": "https://www.vox.com/recode/23548422/quiet-quitting-hiring-great-resignation-words-about-work",
+            "posted_date": "2023 year, 01 month, 12 day, at 21:59",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "5 unintended consequences of the EV revolution ",
+            "article_link": "https://www.vox.com/recode/2023/1/12/23550948/acceleration-cold-weather-tesla-ford-150-electric-vehicle-transition",
+            "posted_date": "2023 year, 01 month, 12 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "What Meta employees really think about their company’s brutal year ",
+            "article_link": "https://www.vox.com/recode/2023/1/11/23547490/meta-facebook-mark-zuckerberg-stock-employees-morale-survey-2022-year",
+            "posted_date": "2023 year, 01 month, 11 day, at 14:18",
+            "topic_title": "Technology",
+            "topic_link": "https://www.vox.com/technology"
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "Elon Musk’s Starlink is only the beginning",
+            "article_link": "https://www.vox.com/recode/2023/1/10/23548291/elon-musk-starlink-space-internet-satellites-amazon-oneweb",
+            "posted_date": "2023 year, 01 month, 10 day, at 18:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "What is generative AI, and why is it suddenly everywhere?",
+            "article_link": "https://www.vox.com/recode/2023/1/5/23539055/generative-ai-chatgpt-stable-diffusion-lensa-dall-e",
+            "posted_date": "2023 year, 01 month, 05 day, at 13:00",
+            "topic_title": "The rise of artificial intelligence, explained",
+            "topic_link": "https://www.vox.com/2023/4/28/23702644/artificial-intelligence-machine-learning-technology"
+        },
+        {
+            "authors": [
+                "Peter Kafka",
+                "Rani Molla"
+            ],
+            "article_title": "The streaming boom is over",
+            "article_link": "https://www.vox.com/recode/2023/1/5/23539590/streaming-losses-netflix-hbo-peter-kafka-media-column",
+            "posted_date": "2023 year, 01 month, 05 day, at 12:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Izzie Ramirez"
+            ],
+            "article_title": "Your stuff is actually worse now",
+            "article_link": "https://www.vox.com/the-goods/23529587/consumer-goods-quality-fast-fashion-technology",
+            "posted_date": "2023 year, 01 month, 04 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Dylan Matthews",
+                "Sigal Samuel"
+            ],
+            "article_title": "23 things we think will happen in 2023",
+            "article_link": "https://www.vox.com/future-perfect/2023/1/2/23494204/biden-trump-putin-supreme-court-2023-predictions",
+            "posted_date": "2023 year, 01 month, 02 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Big Tech’s Big Flops of 2022",
+            "article_link": "https://www.vox.com/recode/2022/12/27/23520906/amazon-apple-google-meta-streaming-big-tech-moonshots-goodbye",
+            "posted_date": "2022 year, 12 month, 27 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Christian Paz"
+            ],
+            "article_title": "Good luck explaining a TikTok ban to young people",
+            "article_link": "https://www.vox.com/policy-and-politics/23523287/tiktok-ban-young-people-gen-z-campaign-outreach",
+            "posted_date": "2022 year, 12 month, 24 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "Sam Bankman-Fried’s arrest is the culmination of an epic flameout",
+            "article_link": "https://www.vox.com/the-goods/23458837/sam-bankman-fried-ftx-sbf-downfall-explained",
+            "posted_date": "2022 year, 12 month, 22 day, at 20:11",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jason Del Rey"
+            ],
+            "article_title": "Amazon’s antitrust settlement in Europe sure looks like a win for Amazon",
+            "article_link": "https://www.vox.com/recode/2022/12/22/23522734/amazon-eu-settlement-buy-box-sellers-antitrust",
+            "posted_date": "2022 year, 12 month, 22 day, at 18:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "The year EVs outgrew Tesla",
+            "article_link": "https://www.vox.com/recode/2022/12/22/23521519/tesla-electric-vehicles-milestones-ira-biden",
+            "posted_date": "2022 year, 12 month, 22 day, at 15:25",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Why you saw more ads on your iPhone in 2022",
+            "article_link": "https://www.vox.com/recode/2022/12/22/23513061/apple-iphone-app-store-ads-privacy-antitrust",
+            "posted_date": "2022 year, 12 month, 22 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon Musk’s future as Twitter CEO is suddenly in question",
+            "article_link": "https://www.vox.com/recode/23440075/elon-musk-twitter-layoffs-check-mark-verification",
+            "posted_date": "2022 year, 12 month, 21 day, at 18:12",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon Musk now says he’ll step down as Twitter CEO",
+            "article_link": "https://www.vox.com/recode/2022/12/20/23519453/elon-musk-twitter-ceo-why-not-quit-resign",
+            "posted_date": "2022 year, 12 month, 21 day, at 03:10",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "America’s most important EV is also its goofiest ",
+            "article_link": "https://www.vox.com/science-and-health/23518852/postal-service-electric-mail-truck-usps-ngdv-dejoy",
+            "posted_date": "2022 year, 12 month, 20 day, at 22:55",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "The US government’s TikTok ban is more complicated than it sounds",
+            "article_link": "https://www.vox.com/recode/2022/12/20/23518973/tiktok-for-you-algorithm-omnibus-bill-ban",
+            "posted_date": "2022 year, 12 month, 20 day, at 20:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "The billionaire vibe shift",
+            "article_link": "https://www.vox.com/the-goods/2022/12/20/23509726/billionaire-vibe-shift-elon-sbf-2022",
+            "posted_date": "2022 year, 12 month, 20 day, at 13:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Twitter enters its chaotic new multicolored, multishaped check mark phase",
+            "article_link": "https://www.vox.com/recode/2022/12/12/23506109/elon-musk-twitter-blue-verified-checks-gold-gray",
+            "posted_date": "2022 year, 12 month, 19 day, at 22:52",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Fortnite maker Epic Games has to pay $520 million for tricking kids and violating their privacy",
+            "article_link": "https://www.vox.com/recode/2022/12/19/23516925/epic-games-ftc-settlement-520-million",
+            "posted_date": "2022 year, 12 month, 19 day, at 18:45",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Meta is facing the test of its lifetime  ",
+            "article_link": "https://www.vox.com/recode/2022/12/19/23513429/meta-test-lifetime-metaverse-mark-zuckerberg-reality-labs-andrew-bosworth",
+            "posted_date": "2022 year, 12 month, 19 day, at 14:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "Elon Musk’s Twitter journalist purge has begun",
+            "article_link": "https://www.vox.com/recode/2022/12/15/23512158/elon-musk-twitter-journalist-purge-has-begun",
+            "posted_date": "2022 year, 12 month, 16 day, at 19:39",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "Angry, irrational, erratic: This is Elon Musk’s Twitter",
+            "article_link": "https://www.vox.com/recode/2022/12/16/23512993/doxxing-elon-musk-twitter-journalist-ban",
+            "posted_date": "2022 year, 12 month, 16 day, at 19:05",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Andrew Prokop"
+            ],
+            "article_title": "Why the Twitter Files actually matter",
+            "article_link": "https://www.vox.com/policy-and-politics/2022/12/15/23505370/twitter-files-elon-musk-taibbi-weiss-covid",
+            "posted_date": "2022 year, 12 month, 15 day, at 19:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "How workers fought back in 2022 ",
+            "article_link": "https://www.vox.com/recode/2022/12/15/23505303/workers-2022-quits-remote-work-unions",
+            "posted_date": "2022 year, 12 month, 15 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Zack Beauchamp"
+            ],
+            "article_title": "The 80-year-old book that explains Elon Musk and tech’s new right-wing tilt",
+            "article_link": "https://www.vox.com/23505311/elon-musk-twitter-managerial-woke-james-burnham",
+            "posted_date": "2022 year, 12 month, 14 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jonathan Guyer"
+            ],
+            "article_title": "Inside the chaos at Washington’s most connected military tech startup",
+            "article_link": "https://www.vox.com/recode/23507236/inside-disruption-rebellion-defense-washington-connected-military-tech-startup",
+            "posted_date": "2022 year, 12 month, 14 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Emily Stewart"
+            ],
+            "article_title": "FTX’s implosion and SBF’s arrest, explained",
+            "article_link": "https://www.vox.com/the-goods/23451761/ftx-sam-bankman-fried-arrest-bankrupt-bitcoin-alameda",
+            "posted_date": "2022 year, 12 month, 14 day, at 00:11",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Maybe Trump was right about TikTok",
+            "article_link": "https://www.vox.com/recode/23453786/tiktok-bytedance-cfius-data-trump-ban",
+            "posted_date": "2022 year, 12 month, 13 day, at 18:41",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Umair Irfan"
+            ],
+            "article_title": "We have a genuine fusion energy breakthrough ",
+            "article_link": "https://www.vox.com/recode/23505995/fusion-energy-breakthrough-announcement-ignition-nif",
+            "posted_date": "2022 year, 12 month, 13 day, at 15:45",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Dylan Matthews"
+            ],
+            "article_title": "How effective altruism let Sam Bankman-Fried happen",
+            "article_link": "https://www.vox.com/future-perfect/23500014/effective-altruism-sam-bankman-fried-ftx-crypto",
+            "posted_date": "2022 year, 12 month, 13 day, at 01:50",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil",
+                "Ellen Ioanes"
+            ],
+            "article_title": "NASA’s latest moon mission is the dawn of a new space age",
+            "article_link": "https://www.vox.com/recode/2022/8/27/23323463/artemis-1-moon-orion-sls-nasa-kennedy-space-center-florida",
+            "posted_date": "2022 year, 12 month, 11 day, at 18:21",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Kenny Torrella"
+            ],
+            "article_title": "Neuralink shows what happens when you bring “move fast and break things” to animal research",
+            "article_link": "https://www.vox.com/future-perfect/2022/12/11/23500157/neuralink-animal-testing-elon-musk-usda-probe",
+            "posted_date": "2022 year, 12 month, 11 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "What the Twitter files don’t tell us ",
+            "article_link": "https://www.vox.com/recode/2022/12/9/23502237/twitter-files-elon-musk-conservatives-right-wing-bari-weiss-matt-taibbi-blacklist-shadowban",
+            "posted_date": "2022 year, 12 month, 09 day, at 23:25",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "An incomplete guide to this very weird year, in charts",
+            "article_link": "https://www.vox.com/recode/23451232/2022-crypto-inflation-abortion-flu-remote-ukraine",
+            "posted_date": "2022 year, 12 month, 09 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "Apple makes it easier to keep your data secret from hackers, cops, and even Apple",
+            "article_link": "https://www.vox.com/recode/2022/12/8/23499936/apple-advanced-data-protection-encryption",
+            "posted_date": "2022 year, 12 month, 08 day, at 18:39",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Avishay Artsy"
+            ],
+            "article_title": "Elon Musk’s tunnels to nowhere",
+            "article_link": "https://www.vox.com/recode/2022/12/8/23498861/elon-musk-boring-company-tunnels-finished",
+            "posted_date": "2022 year, 12 month, 08 day, at 12:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Jason Del Rey"
+            ],
+            "article_title": "Layoffs, buyouts, and rescinded offers: Amazon’s status as a top tech employer is taking a hit ",
+            "article_link": "https://www.vox.com/recode/2022/12/8/23498824/amazon-layoffs-voluntary-buyouts-rescinded-offers-reputation",
+            "posted_date": "2022 year, 12 month, 08 day, at 11:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Peter Kafka"
+            ],
+            "article_title": "The people who hate Sam Bankman-Fried the most",
+            "article_link": "https://www.vox.com/recode/2022/12/7/23497285/sam-bankman-fried-ftx-sbf-anger-fraud-crypto-media-peter-kafka-column",
+            "posted_date": "2022 year, 12 month, 07 day, at 21:15",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rebecca Heilweil"
+            ],
+            "article_title": "AI is finally good at stuff, and that’s a problem",
+            "article_link": "https://www.vox.com/recode/2022/12/7/23498694/ai-artificial-intelligence-chat-gpt-openai",
+            "posted_date": "2022 year, 12 month, 07 day, at 20:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Sara Morrison"
+            ],
+            "article_title": "We don’t need another Twitter",
+            "article_link": "https://www.vox.com/recode/2022/12/6/23496363/twitter-mastodon-hive-musk-replacement",
+            "posted_date": "2022 year, 12 month, 07 day, at 18:23",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Shirin Ghaffary"
+            ],
+            "article_title": "The Twitter power users who can’t just quit",
+            "article_link": "https://www.vox.com/recode/2022/12/2/23488678/twitter-journalists-quitting-elon-musk-mastodon-post",
+            "posted_date": "2022 year, 12 month, 02 day, at 12:30",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "Conferences want to cure the work-from-home blues",
+            "article_link": "https://www.vox.com/recode/2022/12/2/23488147/conferences-remote-work-experience",
+            "posted_date": "2022 year, 12 month, 02 day, at 11:00",
+            "topic_title": null,
+            "topic_link": null
+        },
+        {
+            "authors": [
+                "Whizy Kim"
+            ],
+            "article_title": "The riveting train wreck of a Sam Bankman-Fried interview",
+            "article_link": "https://www.vox.com/the-goods/2022/11/30/23484790/sam-bankman-fried-ftx-crypto-dealbook-sorkin",
+            "posted_date": "2022 year, 12 month, 01 day, at 03:36",
+            "topic_title": null,
+            "topic_link": null
+        }
+    ]
+}
