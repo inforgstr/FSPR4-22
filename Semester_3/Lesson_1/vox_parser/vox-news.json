@@ -1,7 +1,17 @@
 {
-    "last updated": "2023 year, 07 month, 13 day. At 15:40",
-    "count_pages": 5,
+    "last updated": "2023 year, 07 month, 13 day. At 17:11",
+    "pages_count": 5,
     "vox-news": [
+        {
+            "authors": [
+                "Rani Molla"
+            ],
+            "article_title": "The “return to the office” won’t save the office",
+            "article_link": "https://www.vox.com/technology/2023/5/15/23721410/return-to-office-remote-work-commercial-real-estate",
+            "posted_date": "2023 year, 06 month, 05 day, at 18:03",
+            "topic_title": null,
+            "topic_link": null
+        },
         {
             "authors": [
                 "Shirin Ghaffary"
@@ -1997,16 +2007,6 @@
             "article_title": "Conferences want to cure the work-from-home blues",
             "article_link": "https://www.vox.com/recode/2022/12/2/23488147/conferences-remote-work-experience",
             "posted_date": "2022 year, 12 month, 02 day, at 11:00",
-            "topic_title": null,
-            "topic_link": null
-        },
-        {
-            "authors": [
-                "Whizy Kim"
-            ],
-            "article_title": "The riveting train wreck of a Sam Bankman-Fried interview",
-            "article_link": "https://www.vox.com/the-goods/2022/11/30/23484790/sam-bankman-fried-ftx-crypto-dealbook-sorkin",
-            "posted_date": "2022 year, 12 month, 01 day, at 03:36",
             "topic_title": null,
             "topic_link": null
         }
