@@ -63,7 +63,7 @@ def btn_click(driver: webdriver.Chrome, css_selector: str, count: int) -> None:
     for _ in range(count):
         btn = driver.find_element(By.CSS_SELECTOR, css_selector)
         btn.click()
-        time.sleep(0.5)
+        time.sleep(0.4)
 
 
 def get_driver_content(link: str, clicks: int) -> BeautifulSoup:
