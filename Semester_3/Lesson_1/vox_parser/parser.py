@@ -69,7 +69,7 @@ def write_json(data: list | dict, page_count: int) -> None:
             "last updated": datetime.now().strftime(
                 "%Y year, %m month, %d day. At %H:%M"
             ),
-            "count_pages": page_count,
+            "pages_count": page_count,
             "vox-news": data,
         }
 
