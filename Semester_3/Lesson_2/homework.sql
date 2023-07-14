@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS friends (
 INSERT into friends 
 	(name, birthday) 
 VALUES 
-	("James Monro", "1940-03-30")
-	("John", "2000-05-13")
+	("James Monro", "1940-03-30"),
+	("John", "2000-05-13"),
 	("Emma Walter", "1889-10-18");
 
 
