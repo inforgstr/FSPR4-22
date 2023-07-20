@@ -46,7 +46,7 @@ select Country.Code, Country.Name as 'Country', City.Name as 'City',
 Country.Population as 'Country Population', 
 City.Population as 'City Population' from Country
 join City on City.CountryCode = Country.Code
-order by 2;
+where 'Country Population' > 500000;
 
 
 -- 8
