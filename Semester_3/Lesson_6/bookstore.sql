@@ -36,8 +36,8 @@ create table author (
 
 
 create table popular_books (
-    book_isbn varchar(50) references book(isbn) UNIQUE,
-    author_email varchar(20) references author(email) UNIQUE,
+    book_title varchar(50),
+    author_name varchar(20),
     number_sold integer,
     number_previewed integer
 );
