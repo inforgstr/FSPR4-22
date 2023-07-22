@@ -7,17 +7,12 @@ create table customer (
 
 create table review (
     review_id integer primary key,
+    customer_id integer references customer(customer_id),
     rating decimal (2, 1),
     review_text text,
     review_date date
 );
 
-
-create table customer_reviews (
-    customer_id integer references customer(customer_id),
-    review_id integer references review(review_id),
-    primary key (customer_id, review_id)
-);
 
 
 insert into customer
@@ -52,28 +47,25 @@ create table menu_categories (
 insert into review
 values (
         1,
+        2,
         3.9,
         'A reasonable place to eat for lunch, if you are in a rush!',
         '2020-03-15'
     ),
     (
         2,
+        3,
         5.0,
         'Awesome service. Would love to host another birthday party at Bytes of China!',
         '2020-05-22'
     ),
     (
         3,
+        1,
         4.5,
         'Other than a small mix-up, I would give it a 5.0!',
         '2020-04-01'
     );
-
-
-insert into customer_reviews
-values (1, 3),
-    (2, 1),
-    (3, 2);
 
 
 set lc_monetary to 'en_IE.utf-8';
