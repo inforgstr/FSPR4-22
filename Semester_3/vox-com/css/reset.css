@@ -1,0 +1,28 @@
+html {
+    font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    vertical-align: inherit;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    background-color: #fff200;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
