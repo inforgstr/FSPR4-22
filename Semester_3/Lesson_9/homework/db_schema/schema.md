@@ -8,8 +8,7 @@ Table store {
   map_link varchar(100)
   description varchar(200)
   start_time timestamp
-  end_time timestamp
-  contacts varchar(100) 
+  end_time timestamp 
 }
 
 Table category {
@@ -100,6 +99,7 @@ Table bucket {
 
 Table review {
   id integer [pk] 
+  rating decimal 
   customer_id integer 
   product_id integer 
   comment text
