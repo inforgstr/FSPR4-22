@@ -1,4 +1,5 @@
 import hashlib
+import sqlite3
 
 from pathlib import Path
 
@@ -30,7 +31,7 @@ def make_password(password: str) -> str:
     return hashed_password
 
 
-def get_user(cursor, email: str, password: str) -> tuple:
+def get_user(cursor: sqlite3.Cursor, email: str, password: str) -> tuple:
     """
     Gets user by its email and password.
     """

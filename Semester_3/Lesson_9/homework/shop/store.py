@@ -23,6 +23,7 @@ class Store:
     def __init__(
         self,
         con: sqlite3.Connection,
+        cursor: sqlite3.Cursor,
         first_name: str,
         last_name: str,
         password: str,
@@ -32,6 +33,7 @@ class Store:
         Initializes a Store instance.
         """
         self.con = con
+        self.cursor = cursor
         self.first_name = first_name
         self.last_name = last_name
         self.password = password
@@ -51,16 +53,14 @@ class Store:
         except ValueError as error:
             return error
 
-        # Create cursor from self.con - sqlite3.Connection()
-        cursor = self.con.cursor()
         # Getting user by email and password
-        user_message = get_user(cursor, self.email, self.password)
+        user_message = get_user(self.cursor, self.email, self.password)
         # Raise AuthRequired exception if user does not exist
         if user_message is None:
             raise AuthRequired
 
         # Request to database for identical card code
-        code = cursor.execute(
+        code = self.cursor.execute(
             """
             SELECT card_code FROM user
             WHERE email != ?
@@ -84,7 +84,7 @@ class Store:
             )
 
         # Update user card values
-        cursor.execute(
+        self.cursor.execute(
             """
             UPDATE user 
             SET
@@ -97,23 +97,22 @@ class Store:
             """,
             (card_code, round(balance, 2), date, self.email, self.password),
         )
-        # Save changes
-        self.con.commit()
+
         return "Successfully card added!"
 
     @classmethod
-    def login(cls, con: sqlite3.Connection, password: str, email: str):
+    def login(
+        cls, con: sqlite3.Connection, cursor: sqlite3.Cursor, password: str, email: str
+    ):
         """
         Login user into shop.
         """
         # Empty message if values are empty
-        if not (isinstance(con, sqlite3.Connection) and password and email):
+        if not (isinstance(cursor, sqlite3.Cursor) and password and email):
             return "Empty values were given."
 
         # Hash password into 256 algorithm
         hashed_password = make_password(password)
-        # Create cursor from self.con - sqlite3.Connection()
-        cursor = con.cursor()
 
         # Getting user by email and password (hashed)
         user = get_user(cursor, email, hashed_password)
@@ -124,12 +123,13 @@ class Store:
         # Determine first_name and last_name from user response
         first_name, last_name = user[1:3]
 
-        return cls(con, first_name, last_name, hashed_password, email)
+        return cls(con, cursor, first_name, last_name, hashed_password, email)
 
     @classmethod
     def register(
         cls,
         con: sqlite3.Connection,
+        cursor: sqlite3.Cursor,
         first_name: str,
         last_name: str,
         email: str,
@@ -140,7 +140,7 @@ class Store:
         """
         # Empty message if values are empty
         if not (
-            isinstance(con, sqlite3.Connection)
+            isinstance(cursor, sqlite3.Cursor)
             and first_name
             and last_name
             and email
@@ -148,8 +148,6 @@ class Store:
         ):
             return "Empty values were given."
 
-        # Create cursor object from self.con - sqlite3.Connection()
-        cursor = con.cursor()
         # Hash password into 256 algorithm
         hashed_password = make_password(password)
 
@@ -174,10 +172,8 @@ class Store:
                 """,
                 (first_name, last_name, email, hashed_password),
             )
-            # Save changes
-            con.commit()
 
-            return cls(con, first_name, last_name, hashed_password, email)
+            return cls(con, cursor, first_name, last_name, hashed_password, email)
         # Email warning message
         elif not re.match(EMAIL_PATTERN, email):
             return "Email must contain @ special character."
@@ -189,10 +185,8 @@ class Store:
         """
         Displays user's purchases.
         """
-        # Create cursor object from self.con - sqlite3.Connection()
-        cursor = self.con.cursor()
         # Getting user by email and password
-        user_id = get_user(cursor, self.email, self.password)[0]
+        user_id = get_user(self.cursor, self.email, self.password)[0]
 
         # Raise AuthRequired exception if user does not exist
         if not user_id:
@@ -234,11 +228,9 @@ class Store:
         """
         Product purchase.
         """
-        # Create cursor from self.con - sqlite3.Connection()
-        cursor = self.con.cursor()
 
         # Getting product by product name
-        product = cursor.execute(
+        product = self.cursor.execute(
             """
             SELECT * FROM products
             WHERE name = ?
@@ -250,7 +242,7 @@ class Store:
             return "Product not found."
 
         # Getting user by email and password
-        user = get_user(cursor, self.email, self.password)
+        user = get_user(self.cursor, self.email, self.password)
         if user is None:
             return "User not found."
         # If user card values are None
@@ -258,44 +250,45 @@ class Store:
             return "You do not have access to perform this action. Please add your card to purchase."
 
         try:
-            # Checking user available balance and round values to avoid periodic digits
-            if float(product[-1]) * float(amount) <= float(user[-1]) and float(
-                amount
-            ) <= float(product[-4]):
-                product_amount = round(float(product[-4]) - float(amount), 2)
-                user_balance = round(
-                    float(user[-1]) - (float(product[-1]) * float(amount)), 2
-                )
-
-                # Completing purchase adding values into database
-                cursor.execute(
-                    """
-                    INSERT INTO purchases (user_id, product_id, purchase_date, product_quantity)
-                    VALUES
-                        (?,?,?,?)
-                    """,
-                    (user[0], product[0], datetime.now(), round(float(amount), 2)),
-                )
-                cursor.execute(
-                    """
-                    UPDATE user SET card_balance = ?
-                    WHERE id = ?
-                    """,
-                    (user_balance, user[0]),
-                )
-
-                cursor.execute(
-                    """
-                    UPDATE products SET quantity = ?
-                    WHERE id = ?
-                    """,
-                    (product_amount, product[0]),
-                )
-                # Save changes
-                self.con.commit()
-                return "Success! Your purchase added. Your balance: %s" % (user_balance)
+            product_price = float(product[-1])
+            amount = float(amount)
+            product_quantity = float(product[-4])
+            user_balance = float(user[-1])
         except ValueError as error:
             return error
+
+        # Checking user available balance and product availibility
+        if product_price * amount <= user_balance and amount <= product_quantity:
+            product_changed_amount = round(product_quantity - amount, 3)
+            user_changed_cash = round(user_balance - (product_price * amount), 3)
+
+            # Completing purchase adding values into database
+            self.cursor.execute(
+                """
+                INSERT INTO purchases (user_id, product_id, purchase_date, product_quantity)
+                VALUES
+                    (?,?,?,?)
+                """,
+                (user[0], product[0], datetime.now(), round(amount, 3)),
+            )
+            self.cursor.execute(
+                """
+                UPDATE user SET card_balance = ?
+                WHERE id = ?
+                """,
+                (user_changed_cash, user[0]),
+            )
+
+            self.cursor.execute(
+                """
+                UPDATE products SET quantity = ?
+                WHERE id = ?
+                """,
+                (product_changed_amount, product[0]),
+            )
+            return "Success! Your purchase added. Your balance: %s" % (
+                user_changed_cash
+            )
 
         return "Please, check your balance or enter valid amount of value."
 
@@ -303,10 +296,8 @@ class Store:
         """
         User's account options.
         """
-        # Creating cursor object from self.con - sqlite3.Connection()
-        cursor = self.con.cursor()
         # Getting user by email and password
-        user = get_user(cursor, self.email, self.password)
+        user = get_user(self.cursor, self.email, self.password)
         # Raise AuthRequired exception if user not found
         if user is None:
             raise AuthRequired
