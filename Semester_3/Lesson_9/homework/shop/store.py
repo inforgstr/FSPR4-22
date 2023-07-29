@@ -297,7 +297,7 @@ class Store:
         except ValueError as error:
             return error
 
-        return "Please, check your balance or enter valid amount value."
+        return "Please, check your balance or enter valid amount of value."
 
     def manage_account(self):
         """
