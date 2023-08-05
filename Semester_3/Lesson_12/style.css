@@ -1,0 +1,26 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 1129px;
+    border-collapse: collapse;
+}
+
+tbody>tr>td:nth-child(1),
+tbody>tr>td:nth-child(2) {
+    width: 20%;
+}
+
+th, td {
+    text-align: start;
+    padding: 8px 8px 8px 16px;
+    tab-size: 15px;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: rgb(221, 221, 221);
+}

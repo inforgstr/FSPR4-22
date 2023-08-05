@@ -22,6 +22,7 @@ def main() -> str:
                 "RandomDilanPassword1",
             )
 
+        print(user.purchase("Some product", 2))
     except AuthRequired as error:
         print(error)
     finally:
