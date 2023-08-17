@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: indigo;
+    color: #FFFFFF;
+}
+
+body {
+    transition: all .5s ease-in-out;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+nav {
+    background-color: indigo;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 20px;
+    list-style: none;
+    border: 1px solid #f0bd3e;
+}
+
+nav li:hover {
+    background-color: #f0bd3e;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background: url(./pikachu.jpg) fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+main {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+img {
+    width: 300px;
+}
+
+.learn-more {
+    display: inline-block;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: purple;
+}
+
+.learn-more:hover {
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+article {
+    margin-top: 10px;
+    border: 1px solid purple;
+}
+
+article:nth-child(1) {
+    margin-top: 0;
+}
+
+header h1 {
+    color: indigo;
+    display: inline-block;
+    margin: 120px;
+}
+
+.footer-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.footer-container a {
+    color: #FFFFFF;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: indigo;
+}

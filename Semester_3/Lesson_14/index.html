@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #707070;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-size: inherit;
+            font-weight: inherit;
+            margin-bottom: 20px;
+        }
+
+        .wrapper {
+            max-width: 1170px;
+            margin: 150px auto 0;
+        }
+
+        input[type=submit] {
+            position: absolute;
+            text-transform: uppercase;
+            background-color: #1C62CD;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+        }
+
+        .search-form input[type=submit] {
+            border-radius: 3px;
+        }
+
+        input {
+            padding: 17px 40px;
+            border: none;
+        }
+
+        input[type=text] {
+            background-color: #F0F0F4;
+            position: relative;
+            padding: 15px 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-form input[type=text] {
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #154da1;
+        }
+
+        .wrapper>div {
+            margin-bottom: 40px;
+        }
+
+        .email-form h3 {
+            width: 250px;
+            font-size: 15px;
+            color: #0f0f0f;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="search-form">
+            <h1>Search:</h1>
+            <form>
+                <input type="text" name="search" placeholder="Введите марку">
+                <input type="submit" value="искать">
+            </form>
+        </div>
+        <div class="email-form">
+            <h3>
+                Подпишитесь на нашу рассылку
+                и узнавайте о акция быстрее
+            </h3>
+            <form>
+                <input type="email" name="email" placeholder="Введите ваш e-mail">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
