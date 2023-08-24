@@ -28,17 +28,19 @@
 
 // let name = "Yohan";
 
-// // Switch
+// Switch
 
 // let item = "papaya";
 
-// // switch (papaya) {
-// //   case 'tomato':
-// //     console.log("Tomatoes are $0.49");
-// //     break;
-// //   case "papaya":
-// //     console.log("Papayas are $0.8");
-// // };
+// switch (papaya) {
+//   case 'tomato':
+//     console.log("Tomatoes are $0.49");
+//     break;
+//   case "papaya":
+//     console.log("Papayas are $0.8");
+//  default:
+//      console.log("Nothing found.");
+// };
 
 
 // if (age >= 18 && name === "Yohan") {
