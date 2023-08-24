@@ -11,7 +11,6 @@ function count(array) {
   return ans;
 }
 
-
 // Who is the killer?
 function killer(suspectInfo, dead) {
   let objKeys = Object.keys(suspectInfo);
