@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guesser Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Number Guesser!</h1>
+      </header>
+      <main>
+        <div class="main__head">
+          <h1>Round <span>1</span></h1>
+          <p>Target Number: <span>?</span></p>
+        </div>
+        <div class="main__content">
+          <div class="computer-side">
+            <div class="side-name">Computer</div>
+            <div class="side-score">Score: <span>0</span></div>
+            <img src="./img/question_mark.svg" alt="" width="200" />
+          </div>
+          <div class="user-side">
+            <div class="side-name">You</div>
+            <div class="side-score">Score: <span>0</span></div>
+            <input id="user-input" type="text" value="0" />
+            <div class="input-changer">
+              <div class="minus">-</div>
+              <div class="plus">+</div>
+            </div>
+            <div class="btn-make-guess">
+              <button class="active">Make a Guess</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="btn-next-round">
+        <button class="active">Next Round</button>
+      </div>
+      <div class="history">
+        <header class="history__header">
+          <h1>History</h1>
+        </header>
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th>Round</th>
+                <th>Winner</th>
+                <th>Guessed Number</th>
+                <th>Target Number</th>
+                <th>Opponent Guessed Number</th>
+                <th>Passed Time</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__inner">
+        <div class="footer-step">
+          <h3>Step 1</h3>
+          <p>Input a number between 0 and 10.</p>
+        </div>
+        <div class="footer-step">
+          <h3>Step 2</h3>
+          <p>
+            Click "Make a Guess" to submit your guess and see who won the round.
+          </p>
+        </div>
+        <div class="footer-step">
+          <h3>Step 3</h3>
+          <p>Click "Next Round" to play again.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

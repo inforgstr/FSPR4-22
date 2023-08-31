@@ -1,0 +1,328 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue: #1c62cd;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.container header {
+  margin-top: 40px;
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+.main__head p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.main__content > div {
+  padding: 20px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__content .computer-side {
+  border: 0;
+  background-color: rgb(48, 48, 48);
+}
+
+.main__content .user-side {
+  border: 1px solid gray;
+  background-color: rgb(18, 10, 46);
+  border-radius: 4px;
+  transition: box-shadow 0.4s ease, background-color 0.5s ease,
+    border-radius 0.5s ease;
+}
+
+.user-side:hover {
+  border-radius: 30px;
+  background-color: rgb(18, 10, 46);
+}
+
+.side-name {
+  margin-bottom: 10px;
+}
+
+.side-score {
+  margin-bottom: 30px;
+}
+
+.user-side input {
+  border-radius: 14px;
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  font-size: 70px;
+  text-align: center;
+  outline: none;
+  touch-action: none;
+  border: 1px solid rgb(129, 75, 75);
+  color: rgb(190, 150, 255);
+  transition: border-radius 0.5s ease, color 0.4s ease,
+    background-color 0.5s ease-in;
+}
+
+.user-side input:focus {
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(168, 55, 55);
+  border: 0;
+}
+
+.computer-side img {
+  margin-top: 20px;
+}
+
+.input-changer {
+  border-radius: 32px;
+  border: 1.5px solid var(--color-blue);
+  display: flex;
+  margin: 14px 0 24px;
+}
+
+.input-changer > div {
+  padding: 12px 34px;
+  font-size: 28px;
+  user-select: none;
+}
+
+.input-changer > div:first-child {
+  border-right: 1.5px solid var(--color-blue);
+  color: var(--color-blue);
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+  background-color: rgb(224, 224, 224);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.input-changer > div:first-child:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+.input-changer > div:last-child {
+  color: rgb(224, 224, 224);
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+  transition: background-color 0.4s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+.input-changer > div:last-child:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.user-winner {
+  color: var(--color-blue);
+  margin: 15px 0;
+}
+
+.btn-make-guess button.active,
+.btn-make-guess button.non-active {
+  padding: 30px 50px;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  background-color: var(--color-blue);
+  border-radius: 3px;
+  transition: background-color 0.5s ease;
+  font-weight: 700;
+}
+
+.btn-make-guess button.non-active {
+  cursor: default;
+  background-color: rgb(124, 124, 124);
+  color: rgb(255, 255, 255);
+}
+
+.btn-make-guess button.active:hover {
+  background-color: rgb(54, 54, 173);
+}
+
+.computer-winner {
+  margin: 15px 0;
+  color: rgb(255, 88, 88);
+  padding-top: 30px;
+}
+
+.btn-next-round {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-next-round button.t,
+.btn-next-round button.non-active {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 32px 74px;
+  background-color: rgb(50, 50, 156);
+  border: 0;
+  color: white;
+  border-radius: 3px;
+  transition: background-color 0.5s ease;
+}
+
+.btn-next-round button.non-active {
+  cursor: default;
+  background-color: rgb(75, 75, 75);
+}
+
+.btn-next-round button.active:hover {
+  background-color: rgb(72, 72, 201);
+}
+
+.computer-answer,
+.computer-answer-large {
+  font-size: 80px;
+  margin: 50px 0 85px;
+  padding: 0 78px;
+  color: rgb(192, 192, 192);
+}
+
+.computer-answer-large {
+  padding: 0 58px;
+}
+
+.history {
+  margin: 100px 0;
+  padding: 20px 0;
+}
+
+.history header {
+  padding: 20px 0;
+}
+
+@keyframes animateHeader {
+  from {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  to {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+}
+
+@keyframes animateReverseHeader {
+  from {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+  to {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.history header h1 {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  padding: 20px 0;
+  width: max-content;
+  margin: 0 auto;
+  border-top: 2px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.history table {
+  border-collapse: collapse;
+}
+
+.history .content {
+  margin: 0 auto;
+}
+
+.history thead th {
+  padding: 20px 30px;
+  border: 1.4px solid var(--color-blue);
+}
+
+.history thead th:first-child {
+  border-left: 0;
+}
+
+.history thead th:last-child {
+  border-right: 0;
+}
+
+.history tbody th {
+  padding: 30px 0;
+}
+
+.history tbody tr {
+  border-bottom: 1px solid gray;
+  background-image: linear-gradient(
+    0.3turn,
+    transparent,
+    rgb(31, 16, 59),
+    transparent
+  );
+}
+
+.history tbody {
+  transition: all 0.5s ease;
+}
+
+footer {
+  margin-top: 70px;
+  background-color: rgb(71, 71, 71);
+}
+
+footer .footer__inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__inner .footer-step  {
+  width: 200px;
+}
+
+footer h3 {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  color: rgb(172, 172, 172);
+}
