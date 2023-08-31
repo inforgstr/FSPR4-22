@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        user-select: none;
+        max-width: max-content;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 50px 100px;
+        border-radius: 12px;
+        background-color: #383838;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Change ME!</p>
+
+    <script>
+      const changeData = [
+        "monospace",
+        "Tahoma",
+        "Tahoma",
+        "Tahoma",
+        "Verdana, sans-serif",
+      ];
+
+      let pElement = document.querySelector("p");
+
+      function randomColor() {
+        const changeRandom = {
+          bodyColor: "#",
+          bgColor: "#",
+          color: "#",
+          fontSize: Math.ceil(Math.random() * 200) + " px",
+          fontFamily: changeData[Math.floor(Math.random() * changeData.length)],
+        };
+        for (i = 0; i < 6; i++) {
+          changeRandom.bodyColor += Math.floor(Math.random() * 6);
+          changeRandom.bgColor += Math.floor(Math.random() * 6);
+          changeRandom.color += Math.floor(Math.random() * 6);
+        }
+
+        pElement.style.backgroundColor = changeRandom.bgColor;
+        document.body.style.backgroundColor = changeRandom.bodyColor;
+        pElement.style.fontSize = changeRandom.fontSize;
+        pElement.style.fontFamily = changeRandom.fontFamily;
+        pElement.style.color = changeRandom.color;
+      };
+      function randomBgColorOnScroll() {
+        console.log("scrolled");
+        let r = Math.random() * 255;
+        let g = Math.random() * 255;
+        let b = Math.random() * 255;
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      }
+      pElement.addEventListener("click", randomColor);
+      pElement.addEventListener("wheel", randomBgColorOnScroll);
+    </script>
+  </body>
+</html>
