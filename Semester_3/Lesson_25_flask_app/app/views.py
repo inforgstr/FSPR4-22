@@ -8,12 +8,11 @@ from app.models import pets
 def pluralize_string(string: str) -> str:
     try:
         number = int(string)
-        if number == 1:
-            return ""
-        elif number == 0 or number > 1:
+        if number == 0 or number > 1:
             return "s"
+        return ""
     except ValueError:
-        return "Argument should be digit."
+        return ""
 
 
 @app.route("/")
