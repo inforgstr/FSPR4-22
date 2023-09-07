@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+
+{% block title %}{{ pet_type }}{% endblock %} 
+
+{% block content %}
+<a id="go-back" href="{{ url_for('index') }}">&LeftArrow; Go Back</a>
+<div class="category-items">
+  <h1>Pet: {{ data.pets_type }}</h1>
+  {% for pet in data.pets %}
+  <a href="{{ url_for('pet_detail', animal_type=data.pets_type, animal_name=pet.name) }}">{{ pet.name }}</a>
+  {% endfor %}
+</div>
+{% endblock %}

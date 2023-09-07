@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ pet_type }}{% endblock %} 
+
+{% block content %}
+<a id="go-back" href="{{ url_for('pet_list', animal_type=data.pets_type) }}">&LeftArrow; Go Back</a>
+<div class="pet-detail-header">Pet Detail</div>
+<div class="pet-card">
+    <section class="pet-name">
+        <div>Name</div>
+        <div class="name">{{ data.pet_detail.name }}</div>
+    </section>
+    <section class="pet-age">
+        <div>Age</div>
+        <div class="age">{{ data.pet_detail.age }} year{{ data.pet_detail.age|pluralize }} old</div>
+    </section>
+    <section class="pet-breed">
+        <div>Breed</div>
+        <div class="breed">{{ data.pet_detail.breed }}</div>
+    </section>
+    <section class="pet-description">
+        <div>Description</div>
+        <div class="description">{{ data.pet_detail.description }}</div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<div class="category-items">
+  <h1>Choose pet category</h1>
+  {% for category in categories %}
+  <a
+    class="cat_item"
+    href="{{ url_for('pet_list', animal_type=category) }}"
+    >{{ category }}</a
+  >
+  {% endfor %}
+</div>
+{% endblock %}

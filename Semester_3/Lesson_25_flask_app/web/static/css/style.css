@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #dbdbdb;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.category-items {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.category-items h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffb81f;
+}
+
+#go-back {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-top: 30px;
+  padding: 15px;
+  padding-left: 10px;
+  background-color: rgb(182, 105, 105);
+  width: max-content;
+  border-radius: 7px;
+  transition: background-color 0.5s ease;
+}
+
+#go-back:hover {
+  background-color: rgb(192, 56, 56);
+}
+
+.category-items > a {
+  display: block;
+  color: black;
+  margin-top: 70px;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #ffc13c;
+  box-shadow: 1px 2px 22px rgb(158, 158, 158);
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.category-items > a:hover {
+  background-color: #ffe1a1;
+  color: black;
+}
+
+.pet-detail-header {
+  margin-top: 70px;
+  text-align: center;
+  color: #ffb81f;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.pet-card {
+  margin-top: 100px;
+  padding: 20px 70px 70px;
+  background-color: rgb(255, 181, 96);
+  border-radius: 3px;
+}
+
+.pet-card > section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 140px;
+  row-gap: 50px;
+  background-color: #eca916;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 8px #727272;
+}
+
+.pet-card > section div {
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.pet-card > section:last-child {
+  margin-top: 20px;
+}
