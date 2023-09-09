@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+<h1 id="list">Recipe Details</h1>
+
+<div class="content__inner">
+  {% if image %}
+  <div class="recipe-img">
+    <img src="{{ image }}" alt="recipe image">
+  </div>
+  {% endif %}
+  <h2 id="name">{{ recipe|title }}</h2>
+  <h2 id="type">Type: {{ recipe_type }}</h2>
+  <h2 id="desc">About recipe<br />{{ description }}</h2>
+  <p id="ing-h"><strong>Ingredients</strong></p>
+  {% for ing in ingredient %}
+  <li id="ing">{{ ing }}</li>
+  {% endfor %}
+  <p id="ins-h"><strong>Instructions</strong></p>
+  {% for step, desc in instruction.items() %}
+  <li id="ins">{{ step }}: {{ desc }}</li>
+  {% endfor %}
+
+  {% if comments %}
+  <h3>Comments</h3>
+  <section class="comments">
+    {% for c in comments %} 
+    <div class="item">{{ c }}</div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <form method="POST" id="comment-form">
+    {{ form.hidden_tag() }}
+    {{ form.body.label }}
+    {{ form.body() }}
+    {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}

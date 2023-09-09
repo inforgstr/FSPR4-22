@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 id="list">Create new</h1>
+
+<form id="creation" method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <p id="recipe">
+        {{ form.recipe.label }}
+        {{ form.recipe() }}
+    </p>
+    <p id="recipe">
+        {{ form.image.label }}
+        {{ form.image() }}
+    </p>
+    <p id="category">
+        {{ form.category.label }}
+        {{ form.category }}
+    </p>
+    <p id="description">
+        {{ form.description.label }}
+        {{ form.description() }}
+    </p>
+    <p id="ingredients">
+        {{ form.ingredients.label }}
+        {{ form.ingredients() }}
+    </p>
+    <p id="instructions">
+        {{ form.instructions.label }}
+        {{ form.instructions() }}
+    </p>
+    {{ form.submit() }}
+</form>
+{% endblock %}
