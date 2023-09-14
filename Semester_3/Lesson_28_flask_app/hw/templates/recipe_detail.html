@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Title {{ recipe.title }}</h3>
+
+    {% for comment in comments %}
+    <h2>{{ comment.content }}</h2>
+    {% endfor %}
+</body>
+</html>
